@@ -72,10 +72,10 @@
     "time_change": "2026-02-03 17:14:31"
   },
   "filmpertutti": {
-    "domain": "autos",
-    "full_url": "https://film-pertutti.autos/",
-    "old_domain": "cyou",
-    "time_change": "2026-02-17 15:47:41"
+    "domain": "life",
+    "full_url": "https://film-pertutti.life/",
+    "old_domain": "autos",
+    "time_change": "2026-02-24 14:46:09"
   },
   "tantifilm": {
     "domain": "online",
@@ -84,10 +84,10 @@
     "time_change": "2026-01-26 08:17:55"
   },
   "tantifilm_2": {
-    "domain": "lol",
-    "full_url": "https://tanti-film.lol/",
-    "old_domain": "art",
-    "time_change": "2026-02-17 14:41:57"
+    "domain": "cyou",
+    "full_url": "https://tanti-film.cyou/",
+    "old_domain": "lol",
+    "time_change": "2026-02-24 14:46:10"
   },
   "casaciname": {
     "domain": "art",
