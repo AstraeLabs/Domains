@@ -27,16 +27,16 @@
     "domain": "download",
     "full_url": "https://cb01uno.download/",
     "old_domain": "live",
-    "time_change": "2026-03-02 19:52:31",
-    "ip": "172.67.216.122",
+    "time_change": "2026-03-02 20:30:13",
+    "ip": "104.21.24.24",
     "last_status": 200
   },
   "cb01_2": {
     "domain": "it",
     "full_url": "https://cronosquadredellaversilia.it/",
     "old_domain": "it",
-    "time_change": "2026-03-02 19:52:32",
-    "ip": "172.67.193.118",
+    "time_change": "2026-03-02 20:30:14",
+    "ip": "104.21.73.242",
     "last_status": 403
   },
   "guardaserie": {
@@ -59,8 +59,8 @@
     "domain": "autos",
     "full_url": "https://altadefinizione.autos/",
     "old_domain": "skin",
-    "time_change": "2026-03-02 19:52:35",
-    "ip": "172.67.206.120",
+    "time_change": "2026-03-02 20:30:17",
+    "ip": "104.21.74.212",
     "last_status": 200
   },
   "streamingcommunity": {
@@ -75,73 +75,73 @@
     "domain": "buzz",
     "full_url": "https://streamingunity.buzz/",
     "old_domain": "bike",
-    "time_change": "2026-03-02 18:20:37",
-    "ip": "104.21.84.63",
+    "time_change": "2026-03-02 20:30:19",
+    "ip": "172.67.187.168",
     "last_status": 200
   },
   "guardaplay": {
     "domain": "space",
     "full_url": "https://guardaplay.space/",
     "old_domain": "pro",
-    "time_change": "2026-03-02 19:52:40",
-    "ip": "172.67.139.204",
+    "time_change": "2026-03-02 20:30:21",
+    "ip": "104.21.8.169",
     "last_status": 200
   },
   "eurostreaming": {
     "domain": "ing",
     "full_url": "https://eurostream.ing/",
     "old_domain": "autos",
-    "time_change": "2026-03-02 19:52:41",
-    "ip": "104.21.67.64",
+    "time_change": "2026-03-02 20:30:22",
+    "ip": "172.67.215.114",
     "last_status": 403
   },
   "filmpertutti": {
     "domain": "life",
     "full_url": "https://film-pertutti.life/",
     "old_domain": "autos",
-    "time_change": "2026-03-02 19:52:41",
-    "ip": "172.67.193.22",
+    "time_change": "2026-03-02 20:30:22",
+    "ip": "104.21.57.226",
     "last_status": 200
   },
   "tantifilm": {
     "domain": "online",
     "full_url": "https://tantifilm.online/",
     "old_domain": "online",
-    "time_change": "2026-03-02 19:52:41",
-    "ip": "104.21.72.64",
+    "time_change": "2026-03-02 20:30:22",
+    "ip": "172.67.175.246",
     "last_status": 200
   },
   "tantifilm_2": {
     "domain": "cyou",
     "full_url": "https://tanti-film.cyou/",
     "old_domain": "lol",
-    "time_change": "2026-03-02 19:52:42",
-    "ip": "172.67.144.245",
+    "time_change": "2026-03-02 20:30:23",
+    "ip": "104.21.95.127",
     "last_status": 200
   },
   "casaciname": {
     "domain": "art",
     "full_url": "https://casa-cinema.art/",
     "old_domain": "help",
-    "time_change": "2026-03-02 19:52:44",
-    "ip": "104.21.32.158",
+    "time_change": "2026-03-02 20:30:25",
+    "ip": "172.67.152.219",
     "last_status": 200
   },
   "filmsenzalimite": {
     "domain": "one",
     "full_url": "https://filmsenzalimite.one/",
     "old_domain": "one",
-    "time_change": "2026-03-02 19:52:45",
-    "ip": "172.67.201.147",
+    "time_change": "2026-03-02 20:30:26",
+    "ip": "104.21.52.173",
     "last_status": 200
   },
   "mappl": {
     "domain": "tv",
     "full_url": "https://mappl.tv/",
     "old_domain": "tv",
-    "time_change": "2026-03-02 18:21:37",
+    "time_change": "2026-03-02 20:30:31",
     "ip": "172.67.200.68",
-    "last_status": 200
+    "last_status": 403
   },
   "hydrahd": {
     "domain": "ru",
