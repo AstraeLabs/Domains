@@ -113,7 +113,7 @@ async function checkSiteStatus(url, siteName) {
   }
 }
 
-const domainsJsonUrl = 'https://raw.githubusercontent.com/Arrowar/SC_Domains/main/domains.json';
+const domainsJsonUrl = 'https://raw.githubusercontent.com/AstraeLabs/Domains/main/domains.json';
 
 async function loadSiteData() {
   try {
