@@ -8,8 +8,8 @@
   "animeunity": {
     "domain": "so",
     "full_url": "https://www.animeunity.so/",
-    "time_change": "2026-03-03 08:35:32",
-    "last_status": 200
+    "time_change": "2026-03-03 07:37:46",
+    "last_status": 403
   },
   "animeworld": {
     "domain": "ac",
@@ -27,14 +27,14 @@
   "cb01_2": {
     "domain": "it",
     "full_url": "https://cronosquadredellaversilia.it/",
-    "time_change": "2026-03-03 08:35:35",
-    "last_status": 200
+    "time_change": "2026-03-03 07:37:48",
+    "last_status": 403
   },
   "guardaserie": {
     "domain": "click",
     "full_url": "https://guarda-serie.click/",
-    "time_change": "2026-03-03 08:35:35",
-    "last_status": 200
+    "time_change": "2026-03-03 07:37:49",
+    "last_status": 403
   },
   "guardoserie_2": {
     "domain": "space",
@@ -69,8 +69,8 @@
   "eurostreaming": {
     "domain": "ing",
     "full_url": "https://eurostream.ing/",
-    "time_change": "2026-03-03 08:35:49",
-    "last_status": 200
+    "time_change": "2026-03-03 07:37:57",
+    "last_status": 403
   },
   "filmpertutti": {
     "domain": "life",
@@ -111,8 +111,8 @@
   },
   "hydrahd": {
     "domain": "ru",
-    "full_url": "https://hydrahd.ru",
-    "time_change": "2026-03-03 06:42:37",
+    "full_url": "https://hydrahd.ru/",
+    "time_change": "2026-03-03 07:38:05",
     "last_status": 200
   }
 }
