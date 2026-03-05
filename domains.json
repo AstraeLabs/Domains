@@ -73,9 +73,9 @@
     "last_status": 403
   },
   "filmpertutti": {
-    "domain": "life",
-    "full_url": "https://film-pertutti.life/",
-    "time_change": "2026-03-03 06:42:29",
+    "domain": "sbs",
+    "full_url": "https://film-pertutti.sbs/",
+    "time_change": "2026-03-05 06:43:07",
     "last_status": 200
   },
   "tantifilm": {
@@ -86,15 +86,15 @@
     "last_status": 200
   },
   "tantifilm_2": {
-    "domain": "cyou",
-    "full_url": "https://tanti-film.cyou/",
-    "time_change": "2026-03-02 23:55:00",
+    "domain": "cfd",
+    "full_url": "https://tanti-film.cfd/",
+    "time_change": "2026-03-05 06:43:08",
     "last_status": 200
   },
   "casaciname": {
-    "domain": "art",
-    "full_url": "https://casa-cinema.art/",
-    "time_change": "2026-03-02 23:55:01",
+    "domain": "sbs",
+    "full_url": "https://casa-cinema.sbs/",
+    "time_change": "2026-03-05 06:43:09",
     "last_status": 200
   },
   "filmsenzalimite": {
