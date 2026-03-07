@@ -39,7 +39,7 @@
   "guardoserie_2": {
     "domain": "space",
     "full_url": "https://guardoserie.space/",
-    "time_change": "2026-03-07 21:15:42",
+    "time_change": "2026-03-07 21:35:49",
     "last_status": 200
   },
   "altadefinizione": {
@@ -106,8 +106,8 @@
   "mappl": {
     "domain": "tv",
     "full_url": "https://mappl.tv/",
-    "time_change": "2026-03-07 14:26:45",
-    "last_status": 403
+    "time_change": "2026-03-07 21:35:57",
+    "last_status": 200
   },
   "hydrahd": {
     "domain": "ru",
