@@ -1800,16 +1800,12 @@
   },
   "monochrome": {
     "full_url": "https://monochrome.tf/",
-    "last_status": -1,
-    "time_change": "2026-09-28 23:15:44",
-    "last_check": "2026-09-28T23:15:44.085Z",
-    "response_ms": 747,
+    "last_status": 503,
+    "time_change": "2026-09-28 23:30:54",
+    "last_check": "2026-09-28T23:30:53.595Z",
+    "response_ms": 200,
     "ssl_expiry": "2026-12-22",
     "history": [
-      {
-        "t": "2026-09-26T20:00:55.599Z",
-        "status": 503
-      },
       {
         "t": "2026-09-26T20:31:03.548Z",
         "status": -1
@@ -2005,6 +2001,10 @@
       {
         "t": "2026-09-28T23:15:44.085Z",
         "status": -1
+      },
+      {
+        "t": "2026-09-28T23:30:53.595Z",
+        "status": 503
       }
     ]
   },
