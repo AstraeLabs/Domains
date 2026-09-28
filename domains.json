@@ -556,16 +556,12 @@
   },
   "cb01_2": {
     "full_url": "https://cb01uno.top/",
-    "time_change": "2026-09-28 13:45:35",
-    "last_status": 403,
-    "last_check": "2026-09-28T13:45:35.200Z",
-    "response_ms": 161,
+    "time_change": "2026-09-28 14:00:45",
+    "last_status": 200,
+    "last_check": "2026-09-28T14:00:45.188Z",
+    "response_ms": 541,
     "ssl_expiry": "2026-11-24",
     "history": [
-      {
-        "t": "2026-09-26T12:00:37.874Z",
-        "status": 200
-      },
       {
         "t": "2026-09-26T14:30:35.692Z",
         "status": 403
@@ -761,6 +757,10 @@
       {
         "t": "2026-09-28T13:45:35.200Z",
         "status": 403
+      },
+      {
+        "t": "2026-09-28T14:00:45.188Z",
+        "status": 200
       }
     ]
   },
@@ -1072,9 +1072,9 @@
   },
   "streamingcommunity": {
     "full_url": "https://streamingcommunityz.photos/",
-    "time_change": "2026-09-23 17:16:11",
-    "last_status": 200,
-    "last_check": "2026-09-23T17:16:11.128Z",
+    "time_change": "2026-09-28 14:00:57",
+    "last_status": -1,
+    "last_check": "2026-09-28T14:00:56.501Z",
     "response_ms": 358,
     "ssl_expiry": "2026-11-25",
     "history": [
@@ -1229,6 +1229,10 @@
       {
         "t": "2026-09-23T17:16:11.128Z",
         "status": 200
+      },
+      {
+        "t": "2026-09-28T14:00:56.501Z",
+        "status": -1
       }
     ]
   },
