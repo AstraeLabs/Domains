@@ -346,16 +346,12 @@
   "cb01new": {
     "full_url": "https://cb01uno.top/",
     "old_domain": "live",
-    "time_change": "2026-09-28 16:00:38",
-    "last_status": 403,
-    "last_check": "2026-09-28T16:00:38.129Z",
-    "response_ms": 55,
+    "time_change": "2026-09-28 16:15:29",
+    "last_status": 200,
+    "last_check": "2026-09-28T16:15:29.656Z",
+    "response_ms": 535,
     "ssl_expiry": "2026-11-24",
     "history": [
-      {
-        "t": "2026-09-27T07:45:34.953Z",
-        "status": 200
-      },
       {
         "t": "2026-09-27T08:00:30.307Z",
         "status": 403
@@ -551,6 +547,10 @@
       {
         "t": "2026-09-28T16:00:38.129Z",
         "status": 403
+      },
+      {
+        "t": "2026-09-28T16:15:29.656Z",
+        "status": 200
       }
     ]
   },
@@ -1800,16 +1800,12 @@
   },
   "monochrome": {
     "full_url": "https://monochrome.tf/",
-    "last_status": -1,
-    "time_change": "2026-09-28 16:00:59",
-    "last_check": "2026-09-28T16:00:58.633Z",
-    "response_ms": 332,
+    "last_status": 503,
+    "time_change": "2026-09-28 16:15:50",
+    "last_check": "2026-09-28T16:15:49.070Z",
+    "response_ms": 179,
     "ssl_expiry": "2026-12-22",
     "history": [
-      {
-        "t": "2026-09-25T22:31:15.404Z",
-        "status": 503
-      },
       {
         "t": "2026-09-26T06:01:06.583Z",
         "status": -1
@@ -2005,16 +2001,20 @@
       {
         "t": "2026-09-28T16:00:58.633Z",
         "status": -1
+      },
+      {
+        "t": "2026-09-28T16:15:49.070Z",
+        "status": 503
       }
     ]
   },
   "Cineblog_1": {
-    "full_url": "https://cineblog001.download/",
+    "full_url": "https://cineblog001.cv/",
     "last_status": 200,
-    "time_change": "2026-09-28 08:01:07",
-    "last_check": "2026-09-28T08:01:07.233Z",
-    "response_ms": 631,
-    "ssl_expiry": "2026-12-20",
+    "time_change": "2026-09-28 16:15:52",
+    "last_check": "2026-09-28T16:15:52.149Z",
+    "response_ms": 256,
+    "ssl_expiry": "2026-12-27",
     "history": [
       {
         "t": "2026-09-28T08:01:07.233Z",
