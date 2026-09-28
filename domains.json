@@ -344,13 +344,13 @@
     ]
   },
   "cb01new": {
-    "full_url": "https://cb01uno.top/",
+    "full_url": "https://cb01uno.club/",
     "old_domain": "live",
-    "time_change": "2026-09-28 16:15:29",
+    "time_change": "2026-09-28 16:30:41",
     "last_status": 200,
-    "last_check": "2026-09-28T16:15:29.656Z",
-    "response_ms": 535,
-    "ssl_expiry": "2026-11-24",
+    "last_check": "2026-09-28T16:30:41.650Z",
+    "response_ms": 474,
+    "ssl_expiry": "2026-12-17",
     "history": [
       {
         "t": "2026-09-27T08:00:30.307Z",
@@ -555,12 +555,12 @@
     ]
   },
   "altadefinizione": {
-    "full_url": "https://altadefinizionex.live/",
-    "time_change": "2026-09-23 08:46:17",
+    "full_url": "https://altadefinizionex.me/",
+    "time_change": "2026-09-28 16:30:43",
     "last_status": 200,
-    "last_check": "2026-09-23T08:46:17.010Z",
-    "response_ms": 65,
-    "ssl_expiry": "2026-11-26",
+    "last_check": "2026-09-28T16:30:43.317Z",
+    "response_ms": 64,
+    "ssl_expiry": "2026-11-29",
     "history": [
       {
         "t": "2026-07-09T12:06:36.975Z",
