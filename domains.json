@@ -1384,16 +1384,12 @@
   },
   "hydrahd": {
     "full_url": "https://hydrahd.ws/",
-    "time_change": "2026-09-30 17:01:27",
-    "last_status": 200,
-    "last_check": "2026-09-30T17:01:27.701Z",
-    "response_ms": 796,
+    "time_change": "2026-09-30 17:16:56",
+    "last_status": 403,
+    "last_check": "2026-09-30T17:16:55.987Z",
+    "response_ms": 5006,
     "ssl_expiry": "2026-11-10",
     "history": [
-      {
-        "t": "2026-09-29T08:16:02.069Z",
-        "status": 200
-      },
       {
         "t": "2026-09-29T09:01:00.617Z",
         "status": 403
@@ -1589,6 +1585,10 @@
       {
         "t": "2026-09-30T17:01:27.701Z",
         "status": 200
+      },
+      {
+        "t": "2026-09-30T17:16:55.987Z",
+        "status": 403
       }
     ]
   },
@@ -2014,15 +2014,19 @@
   },
   "Cineblog_1": {
     "full_url": "https://cineblog001.cv/",
-    "last_status": 200,
-    "time_change": "2026-09-28 16:15:52",
-    "last_check": "2026-09-28T16:15:52.149Z",
+    "last_status": -1,
+    "time_change": "2026-09-30 17:17:24",
+    "last_check": "2026-09-30T17:17:23.255Z",
     "response_ms": 256,
     "ssl_expiry": "2026-12-27",
     "history": [
       {
         "t": "2026-09-28T08:01:07.233Z",
         "status": 200
+      },
+      {
+        "t": "2026-09-30T17:17:23.255Z",
+        "status": -1
       }
     ]
   }
