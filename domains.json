@@ -1380,16 +1380,12 @@
   },
   "hydrahd": {
     "full_url": "https://hydrahd.ws/",
-    "time_change": "2026-09-30 11:16:32",
-    "last_status": 403,
-    "last_check": "2026-09-30T11:16:32.318Z",
-    "response_ms": 43,
+    "time_change": "2026-09-30 11:46:30",
+    "last_status": 200,
+    "last_check": "2026-09-30T11:46:30.588Z",
+    "response_ms": 903,
     "ssl_expiry": "2026-11-10",
     "history": [
-      {
-        "t": "2026-09-28T18:01:21.985Z",
-        "status": 200
-      },
       {
         "t": "2026-09-28T19:45:42.766Z",
         "status": 403
@@ -1585,6 +1581,10 @@
       {
         "t": "2026-09-30T11:16:32.318Z",
         "status": 403
+      },
+      {
+        "t": "2026-09-30T11:46:30.588Z",
+        "status": 200
       }
     ]
   },
@@ -1800,16 +1800,12 @@
   },
   "monochrome": {
     "full_url": "https://monochrome.tf/",
-    "last_status": -1,
-    "time_change": "2026-09-30 11:38:46",
-    "last_check": "2026-09-30T11:38:45.314Z",
-    "response_ms": 235,
+    "last_status": 503,
+    "time_change": "2026-09-30 11:46:35",
+    "last_check": "2026-09-30T11:46:34.769Z",
+    "response_ms": 173,
     "ssl_expiry": "2026-12-22",
     "history": [
-      {
-        "t": "2026-09-28T13:01:08.605Z",
-        "status": 503
-      },
       {
         "t": "2026-09-28T16:00:58.633Z",
         "status": -1
@@ -2005,6 +2001,10 @@
       {
         "t": "2026-09-30T11:38:45.314Z",
         "status": -1
+      },
+      {
+        "t": "2026-09-30T11:46:34.769Z",
+        "status": 503
       }
     ]
   },
