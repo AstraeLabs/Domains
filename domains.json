@@ -964,16 +964,12 @@
   },
   "eurostreaming": {
     "full_url": "https://eurostream.mom/",
-    "time_change": "2026-09-30 16:16:23",
-    "last_status": 200,
-    "last_check": "2026-09-30T16:16:23.438Z",
-    "response_ms": 646,
+    "time_change": "2026-09-30 19:31:20",
+    "last_status": 500,
+    "last_check": "2026-09-30T19:31:20.814Z",
+    "response_ms": 375,
     "ssl_expiry": "2026-11-27",
     "history": [
-      {
-        "t": "2026-07-27T22:45:50.273Z",
-        "status": 403
-      },
       {
         "t": "2026-07-29T09:30:44.522Z",
         "status": 200
@@ -1169,6 +1165,10 @@
       {
         "t": "2026-09-30T16:16:23.438Z",
         "status": 200
+      },
+      {
+        "t": "2026-09-30T19:31:20.814Z",
+        "status": 500
       }
     ]
   },
@@ -1804,16 +1804,12 @@
   },
   "monochrome": {
     "full_url": "https://monochrome.tf/",
-    "last_status": -1,
-    "time_change": "2026-09-30 19:16:29",
-    "last_check": "2026-09-30T19:16:28.532Z",
-    "response_ms": 173,
+    "last_status": 503,
+    "time_change": "2026-09-30 19:31:31",
+    "last_check": "2026-09-30T19:31:30.681Z",
+    "response_ms": 424,
     "ssl_expiry": "2026-12-22",
     "history": [
-      {
-        "t": "2026-09-28T16:15:49.070Z",
-        "status": 503
-      },
       {
         "t": "2026-09-28T17:16:06.883Z",
         "status": -1
@@ -2009,6 +2005,10 @@
       {
         "t": "2026-09-30T19:16:28.532Z",
         "status": -1
+      },
+      {
+        "t": "2026-09-30T19:31:30.681Z",
+        "status": 503
       }
     ]
   },
