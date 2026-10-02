@@ -964,16 +964,12 @@
   },
   "eurostreaming": {
     "full_url": "https://eurostream.mom/",
-    "time_change": "2026-10-02 10:46:35",
-    "last_status": 522,
-    "last_check": "2026-10-02T10:46:35.770Z",
-    "response_ms": 19391,
+    "time_change": "2026-10-02 11:01:20",
+    "last_status": 200,
+    "last_check": "2026-10-02T11:01:20.484Z",
+    "response_ms": 784,
     "ssl_expiry": "2026-11-27",
     "history": [
-      {
-        "t": "2026-08-12T14:46:35.672Z",
-        "status": 200
-      },
       {
         "t": "2026-08-19T13:16:42.985Z",
         "status": 522
@@ -1169,6 +1165,10 @@
       {
         "t": "2026-10-02T10:46:35.770Z",
         "status": 522
+      },
+      {
+        "t": "2026-10-02T11:01:20.484Z",
+        "status": 200
       }
     ]
   },
