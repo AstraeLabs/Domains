@@ -906,10 +906,10 @@
   },
   "guardaplay": {
     "full_url": "https://guardaplay.info/",
-    "time_change": "2026-10-05 18:31:24",
-    "last_status": 200,
-    "last_check": "2026-10-05T18:31:24.194Z",
-    "response_ms": 1159,
+    "time_change": "2026-10-05 18:46:22",
+    "last_status": 403,
+    "last_check": "2026-10-05T18:46:22.388Z",
+    "response_ms": 77,
     "ssl_expiry": "2026-12-10",
     "history": [
       {
@@ -1003,6 +1003,10 @@
       {
         "t": "2026-10-05T18:31:24.194Z",
         "status": 200
+      },
+      {
+        "t": "2026-10-05T18:46:22.388Z",
+        "status": 403
       }
     ]
   },
