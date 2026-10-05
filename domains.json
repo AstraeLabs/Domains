@@ -976,10 +976,10 @@
   },
   "guardoseries": {
     "full_url": "https://guardoseries.shop/",
-    "time_change": "2026-10-05 11:46:20",
-    "last_status": 200,
-    "last_check": "2026-10-05T11:46:20.793Z",
-    "response_ms": 1422,
+    "time_change": "2026-10-05 13:31:26",
+    "last_status": 403,
+    "last_check": "2026-10-05T13:31:26.178Z",
+    "response_ms": 35,
     "ssl_expiry": "2026-12-29",
     "history": [
       {
@@ -997,6 +997,10 @@
       {
         "t": "2026-10-05T11:46:20.793Z",
         "status": 200
+      },
+      {
+        "t": "2026-10-05T13:31:26.178Z",
+        "status": 403
       }
     ]
   },
@@ -1422,16 +1426,12 @@
   },
   "hydrahd": {
     "full_url": "https://hydrahd.ws/",
-    "time_change": "2026-10-05 12:46:24",
-    "last_status": 200,
-    "last_check": "2026-10-05T12:46:24.220Z",
-    "response_ms": 963,
+    "time_change": "2026-10-05 13:31:32",
+    "last_status": 403,
+    "last_check": "2026-10-05T13:31:32.101Z",
+    "response_ms": 39,
     "ssl_expiry": "2026-11-10",
     "history": [
-      {
-        "t": "2026-10-03T18:36:06.800Z",
-        "status": 403
-      },
       {
         "t": "2026-10-03T18:46:31.718Z",
         "status": 200
@@ -1627,6 +1627,10 @@
       {
         "t": "2026-10-05T12:46:24.220Z",
         "status": 200
+      },
+      {
+        "t": "2026-10-05T13:31:32.101Z",
+        "status": 403
       }
     ]
   },
