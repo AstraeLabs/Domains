@@ -658,10 +658,10 @@
   },
   "streamingcommunity": {
     "full_url": "https://streamingcommunityz.promo/",
-    "time_change": "2026-10-05 15:46:20",
-    "last_status": 200,
-    "last_check": "2026-10-05T15:46:20.693Z",
-    "response_ms": 741,
+    "time_change": "2026-10-05 21:46:19",
+    "last_status": 502,
+    "last_check": "2026-10-05T21:46:19.593Z",
+    "response_ms": 2644,
     "ssl_expiry": "2026-11-25",
     "history": [
       {
@@ -823,15 +823,19 @@
       {
         "t": "2026-09-28T14:15:42.186Z",
         "status": 200
+      },
+      {
+        "t": "2026-10-05T21:46:19.593Z",
+        "status": 502
       }
     ]
   },
   "streamingcommunity_2": {
     "full_url": "https://streamingunity.fun/",
-    "time_change": "2026-09-29 20:31:05",
-    "last_status": 200,
-    "last_check": "2026-09-29T20:31:05.305Z",
-    "response_ms": 452,
+    "time_change": "2026-10-05 21:46:24",
+    "last_status": 502,
+    "last_check": "2026-10-05T21:46:24.652Z",
+    "response_ms": 3502,
     "ssl_expiry": "2026-12-28",
     "history": [
       {
@@ -901,6 +905,10 @@
       {
         "t": "2026-09-23T09:46:13.675Z",
         "status": 200
+      },
+      {
+        "t": "2026-10-05T21:46:24.652Z",
+        "status": 502
       }
     ]
   },
@@ -1506,16 +1514,12 @@
   },
   "hydrahd": {
     "full_url": "https://hydrahd.ws/",
-    "time_change": "2026-10-05 21:31:42",
-    "last_status": 403,
-    "last_check": "2026-10-05T21:31:42.546Z",
-    "response_ms": 39,
+    "time_change": "2026-10-05 21:46:35",
+    "last_status": 200,
+    "last_check": "2026-10-05T21:46:35.608Z",
+    "response_ms": 1489,
     "ssl_expiry": "2026-11-10",
     "history": [
-      {
-        "t": "2026-10-04T09:31:22.341Z",
-        "status": 200
-      },
       {
         "t": "2026-10-04T10:16:24.913Z",
         "status": 403
@@ -1711,6 +1715,10 @@
       {
         "t": "2026-10-05T21:31:42.546Z",
         "status": 403
+      },
+      {
+        "t": "2026-10-05T21:46:35.608Z",
+        "status": 200
       }
     ]
   },
