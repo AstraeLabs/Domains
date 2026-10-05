@@ -906,10 +906,10 @@
   },
   "guardaplay": {
     "full_url": "https://guardaplay.info/",
-    "time_change": "2026-10-05 12:16:20",
-    "last_status": 200,
-    "last_check": "2026-10-05T12:16:20.410Z",
-    "response_ms": 512,
+    "time_change": "2026-10-05 14:31:24",
+    "last_status": 403,
+    "last_check": "2026-10-05T14:31:24.486Z",
+    "response_ms": 49,
     "ssl_expiry": "2026-12-10",
     "history": [
       {
@@ -971,15 +971,19 @@
       {
         "t": "2026-10-05T12:16:20.410Z",
         "status": 200
+      },
+      {
+        "t": "2026-10-05T14:31:24.486Z",
+        "status": 403
       }
     ]
   },
   "guardoseries": {
     "full_url": "https://guardoseries.shop/",
-    "time_change": "2026-10-05 14:01:27",
-    "last_status": 403,
-    "last_check": "2026-10-05T14:01:27.590Z",
-    "response_ms": 34,
+    "time_change": "2026-10-05 14:31:27",
+    "last_status": 200,
+    "last_check": "2026-10-05T14:31:27.365Z",
+    "response_ms": 1118,
     "ssl_expiry": "2026-12-29",
     "history": [
       {
@@ -1009,6 +1013,10 @@
       {
         "t": "2026-10-05T14:01:27.590Z",
         "status": 403
+      },
+      {
+        "t": "2026-10-05T14:31:27.365Z",
+        "status": 200
       }
     ]
   },
