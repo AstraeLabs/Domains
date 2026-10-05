@@ -658,10 +658,10 @@
   },
   "streamingcommunity": {
     "full_url": "https://streamingcommunityz.promo/",
-    "time_change": "2026-10-05 21:46:19",
-    "last_status": 502,
-    "last_check": "2026-10-05T21:46:19.593Z",
-    "response_ms": 2644,
+    "time_change": "2026-10-05 22:01:14",
+    "last_status": 200,
+    "last_check": "2026-10-05T22:01:14.798Z",
+    "response_ms": 330,
     "ssl_expiry": "2026-11-25",
     "history": [
       {
@@ -827,15 +827,19 @@
       {
         "t": "2026-10-05T21:46:19.593Z",
         "status": 502
+      },
+      {
+        "t": "2026-10-05T22:01:14.798Z",
+        "status": 200
       }
     ]
   },
   "streamingcommunity_2": {
     "full_url": "https://streamingunity.fun/",
-    "time_change": "2026-10-05 21:46:24",
-    "last_status": 502,
-    "last_check": "2026-10-05T21:46:24.652Z",
-    "response_ms": 3502,
+    "time_change": "2026-10-05 22:01:16",
+    "last_status": 200,
+    "last_check": "2026-10-05T22:01:16.615Z",
+    "response_ms": 262,
     "ssl_expiry": "2026-12-28",
     "history": [
       {
@@ -909,6 +913,10 @@
       {
         "t": "2026-10-05T21:46:24.652Z",
         "status": 502
+      },
+      {
+        "t": "2026-10-05T22:01:16.615Z",
+        "status": 200
       }
     ]
   },
