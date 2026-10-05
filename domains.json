@@ -1000,10 +1000,10 @@
   },
   "guardoseries": {
     "full_url": "https://guardoseries.shop/",
-    "time_change": "2026-10-05 16:16:23",
-    "last_status": 200,
-    "last_check": "2026-10-05T16:16:23.227Z",
-    "response_ms": 945,
+    "time_change": "2026-10-05 17:31:25",
+    "last_status": 403,
+    "last_check": "2026-10-05T17:31:25.531Z",
+    "response_ms": 92,
     "ssl_expiry": "2026-12-29",
     "history": [
       {
@@ -1053,6 +1053,10 @@
       {
         "t": "2026-10-05T16:16:23.227Z",
         "status": 200
+      },
+      {
+        "t": "2026-10-05T17:31:25.531Z",
+        "status": 403
       }
     ]
   },
