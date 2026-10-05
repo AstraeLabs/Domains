@@ -344,12 +344,12 @@
     ]
   },
   "cb01new": {
-    "full_url": "https://cb01uno.club/",
+    "full_url": "https://cb01uno.wiki/",
     "old_domain": "live",
-    "time_change": "2026-09-28 16:30:41",
+    "time_change": "2026-10-05 17:01:18",
     "last_status": 200,
-    "last_check": "2026-09-28T16:30:41.650Z",
-    "response_ms": 474,
+    "last_check": "2026-10-05T17:01:18.135Z",
+    "response_ms": 699,
     "ssl_expiry": "2026-12-17",
     "history": [
       {
@@ -906,10 +906,10 @@
   },
   "guardaplay": {
     "full_url": "https://guardaplay.info/",
-    "time_change": "2026-10-05 16:46:22",
-    "last_status": 403,
-    "last_check": "2026-10-05T16:46:22.575Z",
-    "response_ms": 108,
+    "time_change": "2026-10-05 17:01:26",
+    "last_status": 200,
+    "last_check": "2026-10-05T17:01:26.050Z",
+    "response_ms": 549,
     "ssl_expiry": "2026-12-10",
     "history": [
       {
@@ -991,6 +991,10 @@
       {
         "t": "2026-10-05T16:46:22.575Z",
         "status": 403
+      },
+      {
+        "t": "2026-10-05T17:01:26.050Z",
+        "status": 200
       }
     ]
   },
@@ -2103,12 +2107,12 @@
     ]
   },
   "Cineblog_1": {
-    "full_url": "https://cineblog001.cv/",
+    "full_url": "https://cineblog001.tattoo/",
     "last_status": 200,
-    "time_change": "2026-09-30 17:31:36",
-    "last_check": "2026-09-30T17:31:36.781Z",
-    "response_ms": 450,
-    "ssl_expiry": "2026-12-27",
+    "time_change": "2026-10-05 17:02:04",
+    "last_check": "2026-10-05T17:02:04.795Z",
+    "response_ms": 578,
+    "ssl_expiry": "2027-01-03",
     "history": [
       {
         "t": "2026-09-28T08:01:07.233Z",
