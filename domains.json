@@ -926,16 +926,12 @@
   },
   "guardaplay": {
     "full_url": "https://guardaplay.info/",
-    "time_change": "2026-10-06 22:47:47",
-    "last_status": 403,
-    "last_check": "2026-10-06T22:47:46.671Z",
-    "response_ms": 23,
+    "time_change": "2026-10-06 23:01:24",
+    "last_status": 200,
+    "last_check": "2026-10-06T23:01:24.358Z",
+    "response_ms": 556,
     "ssl_expiry": "2026-12-10",
     "history": [
-      {
-        "t": "2026-10-05T16:16:20.616Z",
-        "status": 200
-      },
       {
         "t": "2026-10-05T16:46:22.575Z",
         "status": 403
@@ -1131,6 +1127,10 @@
       {
         "t": "2026-10-06T22:47:46.671Z",
         "status": 403
+      },
+      {
+        "t": "2026-10-06T23:01:24.358Z",
+        "status": 200
       }
     ]
   },
@@ -1618,16 +1618,12 @@
   },
   "hydrahd": {
     "full_url": "https://hydrahd.ws/",
-    "time_change": "2026-10-06 22:01:21",
-    "last_status": 403,
-    "last_check": "2026-10-06T22:01:21.666Z",
-    "response_ms": 42,
+    "time_change": "2026-10-06 23:01:33",
+    "last_status": 200,
+    "last_check": "2026-10-06T23:01:33.557Z",
+    "response_ms": 809,
     "ssl_expiry": "2026-11-10",
     "history": [
-      {
-        "t": "2026-10-04T20:16:28.304Z",
-        "status": 200
-      },
       {
         "t": "2026-10-04T21:01:25.598Z",
         "status": 403
@@ -1823,6 +1819,10 @@
       {
         "t": "2026-10-06T22:01:21.666Z",
         "status": 403
+      },
+      {
+        "t": "2026-10-06T23:01:33.557Z",
+        "status": 200
       }
     ]
   },
