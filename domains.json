@@ -2267,5 +2267,10 @@
         "status": 200
       }
     ]
+  },
+  "7movies": {
+    "full_url": "https://7movies.ac/",
+    "last_status": null,
+    "time_change": "2026-10-07 09:32:20"
   }
 }
