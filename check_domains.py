@@ -27,6 +27,9 @@ MAX_REDIRECTS     = 10
 GOOGLE_DOH        = "https://dns.google/resolve"
 SSL_TIMEOUT_S     = 7
 HISTORY_CAP       = 50
+DIRECT_RETRY_LIMIT    = 3
+TRANSLATE_RETRY_LIMIT = 2
+RETRY_DELAY_S         = 2.0
 
 IMPERSONATE_POOL = [
     "chrome146", "chrome145", "chrome142", "chrome136",
@@ -239,6 +242,16 @@ def process_site(session: cffi.Session, name: str, config: dict) -> dict | None:
     print(f"[{name}] CHECK -> {url}  ({imp})")
     result = direct_check(session, url, imp)
     status = result["status"]
+
+    attempts = 1
+    while status in (403, 503, 429, -1) and attempts < DIRECT_RETRY_LIMIT:
+        time.sleep(RETRY_DELAY_S)
+        imp = pick_impersonate()
+        print(f"  🔁 Retry diretto ({attempts + 1}/{DIRECT_RETRY_LIMIT}) con {imp}")
+        result = direct_check(session, url, imp)
+        status = result["status"]
+        attempts += 1
+
     final_url = result.get("final_url", url)
     response_ms = result.get("response_ms")
     checked = now_iso()
@@ -255,7 +268,15 @@ def process_site(session: cffi.Session, name: str, config: dict) -> dict | None:
         pass
     elif status in (403, 503, 429, -1):
         print(f"  ⚠️  Blocco (status {status}), provo Google Translate...")
-        bypass = google_translate_proxy(session, url, imp)
+        bypass = {"success": False, "error": "n/a"}
+        for t_attempt in range(TRANSLATE_RETRY_LIMIT):
+            t_imp = pick_impersonate()
+            bypass = google_translate_proxy(session, url, t_imp)
+            if bypass["success"]:
+                break
+            if t_attempt < TRANSLATE_RETRY_LIMIT - 1:
+                print(f"  🔁 Retry Google Translate ({t_attempt + 2}/{TRANSLATE_RETRY_LIMIT})")
+                time.sleep(RETRY_DELAY_S)
         if bypass["success"]:
             new_url = bypass["final_url"]
             print(f"  ✅ Nuovo dominio: {new_url}")
