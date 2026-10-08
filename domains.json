@@ -219,10 +219,10 @@
   },
   "animeworld": {
     "full_url": "https://www.animeworld.ac/",
-    "time_change": "2026-10-08 14:03:06",
-    "last_status": -1,
-    "last_check": "2026-10-08T14:02:35.048Z",
-    "response_ms": 670,
+    "time_change": "2026-10-08 14:16:20",
+    "last_status": 200,
+    "last_check": "2026-10-08T14:16:20.469Z",
+    "response_ms": 501,
     "ssl_expiry": "2026-12-25",
     "history": [
       {
@@ -352,6 +352,10 @@
       {
         "t": "2026-10-08T14:02:35.048Z",
         "status": -1
+      },
+      {
+        "t": "2026-10-08T14:16:20.469Z",
+        "status": 200
       }
     ]
   },
