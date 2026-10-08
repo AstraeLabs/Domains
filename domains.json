@@ -219,10 +219,10 @@
   },
   "animeworld": {
     "full_url": "https://www.animeworld.ac/",
-    "time_change": "2026-10-08 19:02:17",
-    "last_status": -1,
-    "last_check": "2026-10-08T19:01:46.720Z",
-    "response_ms": 501,
+    "time_change": "2026-10-08 19:16:22",
+    "last_status": 200,
+    "last_check": "2026-10-08T19:16:22.177Z",
+    "response_ms": 513,
     "ssl_expiry": "2026-12-25",
     "history": [
       {
@@ -360,6 +360,10 @@
       {
         "t": "2026-10-08T19:01:46.720Z",
         "status": -1
+      },
+      {
+        "t": "2026-10-08T19:16:22.177Z",
+        "status": 200
       }
     ]
   },
@@ -2310,10 +2314,10 @@
   },
   "7movies": {
     "full_url": "https://7movies.ac/",
-    "last_status": 403,
-    "time_change": "2026-10-08 19:03:22",
-    "last_check": "2026-10-08T19:03:20.356Z",
-    "response_ms": 61,
+    "last_status": 200,
+    "time_change": "2026-10-08 19:17:18",
+    "last_check": "2026-10-08T19:17:18.759Z",
+    "response_ms": 58,
     "ssl_expiry": "2026-12-16",
     "history": [
       {
@@ -2351,6 +2355,10 @@
       {
         "t": "2026-10-08T19:03:20.356Z",
         "status": 403
+      },
+      {
+        "t": "2026-10-08T19:17:18.759Z",
+        "status": 200
       }
     ]
   }
