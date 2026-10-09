@@ -970,16 +970,12 @@
   },
   "guardaplay": {
     "full_url": "https://guardaplay.info/",
-    "time_change": "2026-10-09 20:31:39",
-    "last_status": 200,
-    "last_check": "2026-10-09T20:31:39.071Z",
-    "response_ms": 629,
+    "time_change": "2026-10-09 23:31:40",
+    "last_status": 403,
+    "last_check": "2026-10-09T23:31:38.006Z",
+    "response_ms": 62,
     "ssl_expiry": "2026-12-10",
     "history": [
-      {
-        "t": "2026-10-06T17:01:24.879Z",
-        "status": 403
-      },
       {
         "t": "2026-10-06T17:16:20.958Z",
         "status": 200
@@ -1175,6 +1171,10 @@
       {
         "t": "2026-10-09T20:31:39.071Z",
         "status": 200
+      },
+      {
+        "t": "2026-10-09T23:31:38.006Z",
+        "status": 403
       }
     ]
   },
