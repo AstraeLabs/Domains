@@ -970,16 +970,12 @@
   },
   "guardaplay": {
     "full_url": "https://guardaplay.info/",
-    "time_change": "2026-10-11 09:31:30",
-    "last_status": 200,
-    "last_check": "2026-10-11T09:31:30.031Z",
-    "response_ms": 702,
+    "time_change": "2026-10-11 15:01:44",
+    "last_status": 403,
+    "last_check": "2026-10-11T15:01:42.175Z",
+    "response_ms": 9,
     "ssl_expiry": "2026-12-10",
     "history": [
-      {
-        "t": "2026-10-07T06:01:20.779Z",
-        "status": 403
-      },
       {
         "t": "2026-10-07T06:16:15.236Z",
         "status": 200
@@ -1175,6 +1171,10 @@
       {
         "t": "2026-10-11T09:31:30.031Z",
         "status": 200
+      },
+      {
+        "t": "2026-10-11T15:01:42.175Z",
+        "status": 403
       }
     ]
   },
@@ -2314,10 +2314,10 @@
   },
   "7movies": {
     "full_url": "https://7movies.ac/",
-    "last_status": 403,
-    "time_change": "2026-10-11 14:47:32",
-    "last_check": "2026-10-11T14:47:29.521Z",
-    "response_ms": 14,
+    "last_status": 200,
+    "time_change": "2026-10-11 15:02:36",
+    "last_check": "2026-10-11T15:02:36.039Z",
+    "response_ms": 47,
     "ssl_expiry": "2026-12-16",
     "history": [
       {
@@ -2379,6 +2379,10 @@
       {
         "t": "2026-10-11T14:47:29.521Z",
         "status": 403
+      },
+      {
+        "t": "2026-10-11T15:02:36.039Z",
+        "status": 200
       }
     ]
   }
