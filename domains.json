@@ -579,12 +579,12 @@
     ]
   },
   "altadefinizione": {
-    "full_url": "https://altadefinizionex.surf/",
-    "time_change": "2026-10-05 16:46:16",
+    "full_url": "https://altadefinizionex.life/",
+    "time_change": "2026-10-12 17:01:34",
     "last_status": 200,
-    "last_check": "2026-10-05T16:46:16.662Z",
-    "response_ms": 110,
-    "ssl_expiry": "2027-01-03",
+    "last_check": "2026-10-12T17:01:34.787Z",
+    "response_ms": 886,
+    "ssl_expiry": "2027-01-10",
     "history": [
       {
         "t": "2026-07-09T12:06:36.975Z",
