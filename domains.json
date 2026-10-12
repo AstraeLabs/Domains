@@ -681,11 +681,11 @@
     ]
   },
   "streamingcommunity": {
-    "full_url": "https://streamingcommunityz.rip/",
-    "time_change": "2026-10-07 18:01:33",
+    "full_url": "https://streamingcommunityz.shiksha/",
+    "time_change": "2026-10-12 15:16:20",
     "last_status": 200,
-    "last_check": "2026-10-07T18:01:33.929Z",
-    "response_ms": 422,
+    "last_check": "2026-10-12T15:16:20.172Z",
+    "response_ms": 399,
     "ssl_expiry": "2026-11-25",
     "history": [
       {
