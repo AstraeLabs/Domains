@@ -970,16 +970,12 @@
   },
   "guardaplay": {
     "full_url": "https://guardaplay.cam/",
-    "time_change": "2026-10-12 09:16:40",
-    "last_status": 403,
-    "last_check": "2026-10-12T09:16:37.602Z",
-    "response_ms": 8,
+    "time_change": "2026-10-12 09:31:33",
+    "last_status": 200,
+    "last_check": "2026-10-12T09:31:33.478Z",
+    "response_ms": 559,
     "ssl_expiry": "2027-01-07",
     "history": [
-      {
-        "t": "2026-10-07T07:46:14.023Z",
-        "status": 200
-      },
       {
         "t": "2026-10-07T08:31:21.275Z",
         "status": 403
@@ -1175,6 +1171,10 @@
       {
         "t": "2026-10-12T09:16:37.602Z",
         "status": 403
+      },
+      {
+        "t": "2026-10-12T09:31:33.478Z",
+        "status": 200
       }
     ]
   },
