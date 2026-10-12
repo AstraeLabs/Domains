@@ -368,13 +368,13 @@
     ]
   },
   "cb01new": {
-    "full_url": "https://cb01uno.wiki/",
+    "full_url": "https://cb01uno.vip/",
     "old_domain": "live",
-    "time_change": "2026-10-05 17:01:18",
+    "time_change": "2026-10-12 19:31:27",
     "last_status": 200,
-    "last_check": "2026-10-05T17:01:18.135Z",
-    "response_ms": 699,
-    "ssl_expiry": "2026-12-17",
+    "last_check": "2026-10-12T19:31:27.715Z",
+    "response_ms": 506,
+    "ssl_expiry": "2027-01-02",
     "history": [
       {
         "t": "2026-09-27T08:00:30.307Z",
