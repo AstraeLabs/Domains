@@ -1250,16 +1250,12 @@
   },
   "eurostreaming": {
     "full_url": "https://eurostream.pics/",
-    "time_change": "2026-10-12 23:01:51",
-    "last_status": 200,
-    "last_check": "2026-10-12T23:01:51.245Z",
-    "response_ms": 834,
+    "time_change": "2026-10-13 20:02:02",
+    "last_status": 403,
+    "last_check": "2026-10-13T20:01:57.405Z",
+    "response_ms": 335,
     "ssl_expiry": "2026-11-27",
     "history": [
-      {
-        "t": "2026-08-27T20:16:32.354Z",
-        "status": -1
-      },
       {
         "t": "2026-08-27T20:31:26.898Z",
         "status": 200
@@ -1455,6 +1451,10 @@
       {
         "t": "2026-10-12T23:01:51.245Z",
         "status": 200
+      },
+      {
+        "t": "2026-10-13T20:01:57.405Z",
+        "status": 403
       }
     ]
   },
