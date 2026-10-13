@@ -970,16 +970,12 @@
   },
   "guardaplay": {
     "full_url": "https://guardaplay.cam/",
-    "time_change": "2026-10-12 18:31:46",
-    "last_status": 200,
-    "last_check": "2026-10-12T18:31:46.507Z",
-    "response_ms": 916,
+    "time_change": "2026-10-13 07:16:32",
+    "last_status": 403,
+    "last_check": "2026-10-13T07:16:29.763Z",
+    "response_ms": 26,
     "ssl_expiry": "2027-01-07",
     "history": [
-      {
-        "t": "2026-10-07T09:31:19.331Z",
-        "status": 403
-      },
       {
         "t": "2026-10-07T09:32:54.527Z",
         "status": 200
@@ -1175,6 +1171,10 @@
       {
         "t": "2026-10-12T18:31:46.507Z",
         "status": 200
+      },
+      {
+        "t": "2026-10-13T07:16:29.763Z",
+        "status": 403
       }
     ]
   },
@@ -1662,16 +1662,12 @@
   },
   "hydrahd": {
     "full_url": "https://hydrahd.ws/",
-    "time_change": "2026-10-12 20:32:00",
-    "last_status": 200,
-    "last_check": "2026-10-12T20:32:00.703Z",
-    "response_ms": 1042,
+    "time_change": "2026-10-13 07:16:53",
+    "last_status": 403,
+    "last_check": "2026-10-13T07:16:50.855Z",
+    "response_ms": 19,
     "ssl_expiry": "2027-01-08",
     "history": [
-      {
-        "t": "2026-10-05T17:16:42.029Z",
-        "status": 403
-      },
       {
         "t": "2026-10-05T17:46:24.539Z",
         "status": 200
@@ -1867,6 +1863,10 @@
       {
         "t": "2026-10-12T20:32:00.703Z",
         "status": 200
+      },
+      {
+        "t": "2026-10-13T07:16:50.855Z",
+        "status": 403
       }
     ]
   },
@@ -2314,10 +2314,10 @@
   },
   "7movies": {
     "full_url": "https://7movies.ac/",
-    "last_status": 200,
-    "time_change": "2026-10-12 14:47:29",
-    "last_check": "2026-10-12T14:47:29.839Z",
-    "response_ms": 99,
+    "last_status": 403,
+    "time_change": "2026-10-13 07:17:31",
+    "last_check": "2026-10-13T07:17:28.825Z",
+    "response_ms": 46,
     "ssl_expiry": "2026-12-16",
     "history": [
       {
@@ -2415,6 +2415,10 @@
       {
         "t": "2026-10-12T14:47:29.839Z",
         "status": 200
+      },
+      {
+        "t": "2026-10-13T07:17:28.825Z",
+        "status": 403
       }
     ]
   }
