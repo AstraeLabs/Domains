@@ -37,7 +37,7 @@ jobs:
           DOMAINS_FILE: domains.json
           PYTHONIOENCODING: utf-8
 
-      - name: Commit domains.json if changed
+      - name: Commit domains.json + domains_s.json if changed
         id: commit
         env:
           BRANCH: ${{ github.ref_name }}
@@ -46,7 +46,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           for i in 1 2 3; do
-            git add domains.json
+            git add domains.json domains_s.json
             if git diff --cached --quiet; then
               echo "No changes detected"
               echo "pushed=false" >> "$GITHUB_OUTPUT"
@@ -69,10 +69,3 @@ jobs:
 
           echo "push fallito dopo 3 tentativi"
           exit 1
-
-      - name: Invalidate Worker cache
-        if: steps.commit.outputs.pushed == 'true'
-        run: |
-          curl -sf -X POST https://domains-tracker.server66.workers.dev/cache/invalidate \
-            -H "Authorization: Bearer ${{ secrets.WORKER_AUTH_TOKEN }}" \
-            || echo "Cache invalidation failed (non-fatal)"

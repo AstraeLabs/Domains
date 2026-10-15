@@ -42,6 +42,10 @@ def pick_impersonate() -> str:
 
 
 DOMAINS_FILE = os.environ.get("DOMAINS_FILE", "domains.json")
+# Versione ridotta letta dai client (VibraVid): solo nome sito -> full_url, la
+# stessa forma che restituiva GET /get del Worker, cosi' e' un sostituto diretto.
+# domains.json completo e' ~50 KB (history, response_ms, ssl_expiry), questo ~1 KB.
+SLIM_FILE = os.environ.get("DOMAINS_SLIM_FILE", "domains_s.json")
 
 
 INTERSTITIAL_MARKERS = ("disablevpn", "disable-vpn", "vpncheck", "vpn-check", "blockvpn")
@@ -333,7 +337,11 @@ def main():
     with open(DOMAINS_FILE, "w", encoding="utf-8") as f:
         json.dump(all_domains, f, indent=2, ensure_ascii=False)
 
-    print(f"\n✅ {updated_count} domini aggiornati → {DOMAINS_FILE}")
+    slim = {name: {"full_url": config.get("full_url")} for name, config in all_domains.items()}
+    with open(SLIM_FILE, "w", encoding="utf-8") as f:
+        json.dump(slim, f, indent=2, ensure_ascii=False)
+
+    print(f"\n✅ {updated_count} domini aggiornati → {DOMAINS_FILE} (+ {SLIM_FILE})")
 
     print("\n--- Riepilogo ---")
     for name, config in all_domains.items():
