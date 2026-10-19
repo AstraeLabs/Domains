@@ -1044,16 +1044,12 @@
   },
   "guardaplay": {
     "full_url": "https://guardaplay.cam/",
-    "time_change": "2026-10-19 15:16:40",
-    "last_status": 200,
-    "last_check": "2026-10-19T15:16:40.539Z",
-    "response_ms": 598,
+    "time_change": "2026-10-19 20:46:30",
+    "last_status": 403,
+    "last_check": "2026-10-19T20:46:27.827Z",
+    "response_ms": 38,
     "ssl_expiry": "2027-01-07",
     "history": [
-      {
-        "t": "2026-10-11T15:01:42.175Z",
-        "status": 403
-      },
       {
         "t": "2026-10-11T15:16:30.633Z",
         "status": 200
@@ -1249,15 +1245,19 @@
       {
         "t": "2026-10-19T15:16:40.539Z",
         "status": 200
+      },
+      {
+        "t": "2026-10-19T20:46:27.827Z",
+        "status": 403
       }
     ]
   },
   "guardoseries": {
     "full_url": "https://guardoseries.cyou/",
-    "time_change": "2026-10-19 20:31:55",
-    "last_status": 403,
-    "last_check": "2026-10-19T20:31:52.782Z",
-    "response_ms": 71,
+    "time_change": "2026-10-19 20:46:32",
+    "last_status": 200,
+    "last_check": "2026-10-19T20:46:32.590Z",
+    "response_ms": 560,
     "ssl_expiry": "2027-01-11",
     "history": [
       {
@@ -1323,6 +1323,10 @@
       {
         "t": "2026-10-19T20:31:52.782Z",
         "status": 403
+      },
+      {
+        "t": "2026-10-19T20:46:32.590Z",
+        "status": 200
       }
     ]
   },
