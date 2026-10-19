@@ -211,9 +211,9 @@
   },
   "animeunity": {
     "full_url": "https://www.animeunity.so/",
-    "time_change": "2026-10-19 17:16:21",
-    "last_status": -1,
-    "last_check": "2026-10-19T17:16:18.942Z",
+    "time_change": "2026-10-19 17:31:16",
+    "last_status": 403,
+    "last_check": "2026-10-19T17:31:13.888Z",
     "response_ms": 31,
     "ssl_expiry": "2027-01-10",
     "history": [
@@ -244,6 +244,10 @@
       {
         "t": "2026-10-19T17:16:18.942Z",
         "status": -1
+      },
+      {
+        "t": "2026-10-19T17:31:13.888Z",
+        "status": 403
       }
     ]
   },
@@ -1723,12 +1727,12 @@
     ]
   },
   "hydrahd": {
-    "full_url": "https://hydrahd.ws/",
-    "time_change": "2026-10-19 17:01:58",
+    "full_url": "https://hydrahd.gd/",
+    "time_change": "2026-10-19 17:31:50",
     "last_status": 200,
-    "last_check": "2026-10-19T17:01:58.933Z",
-    "response_ms": 698,
-    "ssl_expiry": "2027-01-08",
+    "last_check": "2026-10-19T17:31:50.595Z",
+    "response_ms": 1992,
+    "ssl_expiry": "2026-12-08",
     "history": [
       {
         "t": "2026-10-07T06:16:23.107Z",
