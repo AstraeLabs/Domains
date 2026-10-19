@@ -211,10 +211,10 @@
   },
   "animeunity": {
     "full_url": "https://www.animeunity.so/",
-    "time_change": "2026-10-19 16:46:19",
-    "last_status": -1,
-    "last_check": "2026-10-19T16:46:17.447Z",
-    "response_ms": 66,
+    "time_change": "2026-10-19 17:01:24",
+    "last_status": 403,
+    "last_check": "2026-10-19T17:01:22.265Z",
+    "response_ms": 31,
     "ssl_expiry": "2027-01-10",
     "history": [
       {
@@ -236,6 +236,10 @@
       {
         "t": "2026-10-19T16:46:17.447Z",
         "status": -1
+      },
+      {
+        "t": "2026-10-19T17:01:22.265Z",
+        "status": 403
       }
     ]
   },
@@ -1716,16 +1720,12 @@
   },
   "hydrahd": {
     "full_url": "https://hydrahd.ws/",
-    "time_change": "2026-10-19 16:47:05",
-    "last_status": 403,
-    "last_check": "2026-10-19T16:47:02.924Z",
-    "response_ms": 91,
+    "time_change": "2026-10-19 17:01:58",
+    "last_status": 200,
+    "last_check": "2026-10-19T17:01:58.933Z",
+    "response_ms": 698,
     "ssl_expiry": "2027-01-08",
     "history": [
-      {
-        "t": "2026-10-07T06:01:30.039Z",
-        "status": 200
-      },
       {
         "t": "2026-10-07T06:16:23.107Z",
         "status": 403
@@ -1921,6 +1921,10 @@
       {
         "t": "2026-10-19T16:47:02.924Z",
         "status": 403
+      },
+      {
+        "t": "2026-10-19T17:01:58.933Z",
+        "status": 200
       }
     ]
   },
@@ -2345,12 +2349,12 @@
     ]
   },
   "Cineblog_1": {
-    "full_url": "https://cineblog001.delivery/",
+    "full_url": "https://cineblog001.loan/",
     "last_status": 200,
-    "time_change": "2026-10-12 16:17:23",
-    "last_check": "2026-10-12T16:17:23.472Z",
-    "response_ms": 777,
-    "ssl_expiry": "2027-01-10",
+    "time_change": "2026-10-19 17:02:29",
+    "last_check": "2026-10-19T17:02:29.590Z",
+    "response_ms": 1374,
+    "ssl_expiry": "2027-01-17",
     "history": [
       {
         "t": "2026-09-28T08:01:07.233Z",
