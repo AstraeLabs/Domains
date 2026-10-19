@@ -211,9 +211,9 @@
   },
   "animeunity": {
     "full_url": "https://www.animeunity.so/",
-    "time_change": "2026-10-19 15:31:25",
-    "last_status": 403,
-    "last_check": "2026-10-19T15:31:22.427Z",
+    "time_change": "2026-10-19 15:46:17",
+    "last_status": -1,
+    "last_check": "2026-10-19T15:46:15.424Z",
     "response_ms": 89,
     "ssl_expiry": "2027-01-10",
     "history": [
@@ -224,6 +224,10 @@
       {
         "t": "2026-10-19T15:31:22.427Z",
         "status": 403
+      },
+      {
+        "t": "2026-10-19T15:46:15.424Z",
+        "status": -1
       }
     ]
   },
