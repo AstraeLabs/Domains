@@ -2326,10 +2326,10 @@
   },
   "7movies": {
     "full_url": "https://7movies.ac/",
-    "last_status": 200,
-    "time_change": "2026-10-18 21:47:20",
-    "last_check": "2026-10-18T21:47:19.989Z",
-    "response_ms": 95,
+    "last_status": 403,
+    "time_change": "2026-10-19 11:02:22",
+    "last_check": "2026-10-19T11:02:20.233Z",
+    "response_ms": 30,
     "ssl_expiry": "2026-12-16",
     "history": [
       {
@@ -2491,6 +2491,10 @@
       {
         "t": "2026-10-18T21:47:19.989Z",
         "status": 200
+      },
+      {
+        "t": "2026-10-19T11:02:20.233Z",
+        "status": 403
       }
     ]
   }
