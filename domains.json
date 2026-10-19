@@ -888,10 +888,10 @@
   },
   "streamingcommunity_2": {
     "full_url": "https://streamingunity.fun/",
-    "time_change": "2026-10-19 11:42:05",
-    "last_status": -1,
-    "last_check": "2026-10-19T11:42:01.852Z",
-    "response_ms": 381,
+    "time_change": "2026-10-19 11:48:38",
+    "last_status": 200,
+    "last_check": "2026-10-19T11:48:38.428Z",
+    "response_ms": 9595,
     "ssl_expiry": "2026-12-28",
     "history": [
       {
@@ -981,6 +981,10 @@
       {
         "t": "2026-10-19T11:42:01.852Z",
         "status": -1
+      },
+      {
+        "t": "2026-10-19T11:48:38.428Z",
+        "status": 200
       }
     ]
   },
