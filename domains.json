@@ -690,9 +690,9 @@
   },
   "streamingcommunity": {
     "full_url": "https://streamingcommunityz.shiksha/",
-    "time_change": "2026-10-12 15:16:20",
-    "last_status": 200,
-    "last_check": "2026-10-12T15:16:20.172Z",
+    "time_change": "2026-10-19 11:40:56",
+    "last_status": -1,
+    "last_check": "2026-10-19T11:40:53.209Z",
     "response_ms": 399,
     "ssl_expiry": "2026-11-25",
     "history": [
@@ -879,14 +879,18 @@
       {
         "t": "2026-10-07T18:01:33.929Z",
         "status": 200
+      },
+      {
+        "t": "2026-10-19T11:40:53.209Z",
+        "status": -1
       }
     ]
   },
   "streamingcommunity_2": {
     "full_url": "https://streamingunity.fun/",
-    "time_change": "2026-10-07 18:01:36",
-    "last_status": 200,
-    "last_check": "2026-10-07T18:01:35.924Z",
+    "time_change": "2026-10-19 11:42:05",
+    "last_status": -1,
+    "last_check": "2026-10-19T11:42:01.852Z",
     "response_ms": 381,
     "ssl_expiry": "2026-12-28",
     "history": [
@@ -973,6 +977,10 @@
       {
         "t": "2026-10-07T18:01:35.924Z",
         "status": 200
+      },
+      {
+        "t": "2026-10-19T11:42:01.852Z",
+        "status": -1
       }
     ]
   },
