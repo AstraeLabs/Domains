@@ -1254,10 +1254,10 @@
   },
   "guardoseries": {
     "full_url": "https://guardoseries.cyou/",
-    "time_change": "2026-10-19 18:57:17",
-    "last_status": 200,
-    "last_check": "2026-10-19T18:57:14.837Z",
-    "response_ms": 92,
+    "time_change": "2026-10-19 20:31:55",
+    "last_status": 403,
+    "last_check": "2026-10-19T20:31:52.782Z",
+    "response_ms": 71,
     "ssl_expiry": "2027-01-11",
     "history": [
       {
@@ -1319,6 +1319,10 @@
       {
         "t": "2026-10-19T18:57:14.837Z",
         "status": 200
+      },
+      {
+        "t": "2026-10-19T20:31:52.782Z",
+        "status": 403
       }
     ]
   },
