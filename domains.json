@@ -210,12 +210,12 @@
     ]
   },
   "animeunity": {
-    "full_url": "https://www.animeunity.so/",
-    "time_change": "2026-10-19 17:46:41",
-    "last_status": -1,
-    "last_check": "2026-10-19T17:46:38.830Z",
-    "response_ms": 31,
-    "ssl_expiry": "2027-01-10",
+    "full_url": "https://www.animeunity.to/",
+    "time_change": "2026-10-19 18:50:29",
+    "last_status": 200,
+    "last_check": "2026-10-19T18:50:29.004Z",
+    "response_ms": 305,
+    "ssl_expiry": "2027-01-13",
     "history": [
       {
         "t": "2026-10-19T15:16:17.828Z",
@@ -252,6 +252,10 @@
       {
         "t": "2026-10-19T17:46:38.830Z",
         "status": -1
+      },
+      {
+        "t": "2026-10-19T18:50:29.004Z",
+        "status": 200
       }
     ]
   },
@@ -727,12 +731,12 @@
     ]
   },
   "streamingcommunity": {
-    "full_url": "https://streamingcommunityz.shiksha/",
-    "time_change": "2026-10-19 15:16:34",
-    "last_status": -1,
-    "last_check": "2026-10-19T15:16:32.046Z",
+    "full_url": "https://streamingcommunityz.build/",
+    "time_change": "2026-10-19 18:57:05",
+    "last_status": 200,
+    "last_check": "2026-10-19T18:57:01.501Z",
     "response_ms": 15229,
-    "ssl_expiry": "2026-11-25",
+    "ssl_expiry": "2027-01-17",
     "history": [
       {
         "t": "2026-06-25T20:16:23.399Z",
@@ -929,6 +933,10 @@
       {
         "t": "2026-10-19T15:16:32.046Z",
         "status": -1
+      },
+      {
+        "t": "2026-10-19T18:57:01.501Z",
+        "status": 200
       }
     ]
   },
@@ -1245,12 +1253,12 @@
     ]
   },
   "guardoseries": {
-    "full_url": "https://guardoseries.shop/",
-    "time_change": "2026-10-15 18:01:22",
-    "last_status": -1,
-    "last_check": "2026-10-15T18:01:19.641Z",
+    "full_url": "https://guardoseries.cyou/",
+    "time_change": "2026-10-19 18:57:17",
+    "last_status": 200,
+    "last_check": "2026-10-19T18:57:14.837Z",
     "response_ms": 92,
-    "ssl_expiry": "2026-12-29",
+    "ssl_expiry": "2027-01-11",
     "history": [
       {
         "t": "2026-10-02T11:16:22.458Z",
@@ -1307,6 +1315,10 @@
       {
         "t": "2026-10-15T18:01:19.641Z",
         "status": -1
+      },
+      {
+        "t": "2026-10-19T18:57:14.837Z",
+        "status": 200
       }
     ]
   },

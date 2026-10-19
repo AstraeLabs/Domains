@@ -198,23 +198,136 @@ def extract_new_url(html: str, original_url: str) -> str | None:
 
 
 def google_translate_proxy(session: cffi.Session, url: str, imp: str) -> dict:
-    proxy_url = f"https://translate.google.com/translate?sl=auto&tl=en&u={quote(url, safe='')}"
+    base_url = "https://translate.google.com/translate?hl=it&sl=en&tl=it&u="
+    proxy_url = base_url + quote(url, safe="")
     try:
         apply_google_dns(session, proxy_url)
         res = session.get(
             proxy_url,
             allow_redirects=True,
             timeout=TRANSLATE_TIMEOUT,
-            impersonate=imp,
+            impersonate="chrome",
+            headers={
+                "User-Agent": "android",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+                "Accept-Language": "it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3",
+                "Accept-Charset": "UTF-8",
+                "Accept-Encoding": "gzip",
+            },
         )
         if res.status_code != 200:
             return {"success": False, "error": f"translate status {res.status_code}"}
-        new_url = extract_new_url(res.text, url)
+        html = res.text
+        if "<title>Google Traduttore" in html:
+            proxy_base = "https://translate.googleusercontent.com/translate_p?hl=it&sl=en&tl=it&u="
+            m = re.search(r'(?:href="|src="|value=")(https?://translate[^"]+)', html)
+            if m and url in m.group(1):
+                url_request = m.group(1).replace("&amp;", "&")
+                res2 = session.get(
+                    url_request,
+                    allow_redirects=True,
+                    timeout=TRANSLATE_TIMEOUT,
+                    impersonate="chrome",
+                    headers={
+                        "User-Agent": "android",
+                        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+                        "Accept-Language": "it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3",
+                        "Accept-Charset": "UTF-8",
+                        "Accept-Encoding": "gzip",
+                    },
+                )
+
+                if res2.status_code == 200:
+                    html = res2.text
+                    while "Sto traducendo" in html:
+                        time.sleep(0.5)
+                        res2 = session.get(
+                            url_request,
+                            allow_redirects=True,
+                            timeout=TRANSLATE_TIMEOUT,
+                            impersonate="chrome",
+                            headers={
+                                "User-Agent": "android",
+                                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+                                "Accept-Language": "it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3",
+                                "Accept-Charset": "UTF-8",
+                                "Accept-Encoding": "gzip",
+                            },
+                        )
+                        if res2.status_code == 200:
+                            html = res2.text
+                        else:
+                            break
+
+        html = re.sub(r'\s(\w+)=(?!")([^<>\s]+)', r' \1="\2"', html)
+        html = re.sub(r"https://translate\.googleusercontent\.com/.*?u=(.*?)&amp;usg=[A-Za-z0-9_-]+", r"\1", html)
+        p = urlparse(url)
+        domain = p.hostname or ""
+        if domain:
+            d = domain.replace(".", "-")
+            html = re.sub(r"https?://[a-zA-Z0-9-]*" + re.escape(d) + r"\.translate\.goog(/[a-zA-Z0-9#/-]+)", "https://" + domain + r"\1", html)
+
+        html = re.sub(r"https://translate\.google\.com/website\?[^ ]+u=", "", html)
+        html = re.sub(r"\s+<", "<", html)
+        html = html.replace("&amp;", "&").replace("https://translate.google.com/website?sl=en&tl=it&ajax=1&u=", "")
+        new_url = extract_new_url(html, url)
         if new_url and new_url != url:
             return {"success": True, "final_url": new_url}
+        
+        m = re.search(r'href="(https?://[^"]+)"', html)
+        if m:
+            candidate = m.group(1)
+            cp = urlparse(candidate)
+            if cp.hostname and cp.hostname != (urlparse(url).hostname or ""):
+                return {"success": True, "final_url": f"{cp.scheme}://{cp.netloc}/"}
         return {"success": False, "error": "nessun nuovo dominio trovato"}
     except Exception as e:
         return {"success": False, "error": str(e)}
+
+
+_peer_cache: dict[str, str] = {}
+HOST_RE = re.compile(r"https?://((?:[a-z0-9-]+\.)+[a-z]{2,})", re.I)
+
+
+def brand_label(host: str) -> str:
+    parts = host.lower().split(".")
+    return parts[-2] if len(parts) >= 2 else host.lower()
+
+
+def fetch_peer_html(session: cffi.Session, url: str) -> str:
+    if url in _peer_cache:
+        return _peer_cache[url]
+    html = ""
+    try:
+        apply_google_dns(session, url)
+        res = session.get(url, allow_redirects=True, timeout=TIMEOUT_S, impersonate="chrome")
+        if res.status_code == 200:
+            html = res.text
+    except Exception as e:
+        print(f"  ⚠️  Peer {url} non leggibile: {e}")
+    _peer_cache[url] = html
+    return html
+
+
+def find_from_peers(session: cffi.Session, url: str, peers: list[str]) -> str | None:
+    """Dominio morto (DNS/connessione): cerca nelle pagine degli altri siti un link
+    con lo stesso nome (es. streamingcommunityz.*) ma TLD diverso, e lo verifica."""
+    old_host = (urlparse(url).hostname or "").lower()
+    brand = brand_label(old_host)
+    tried = set()
+    for peer in peers:
+        for m in HOST_RE.finditer(fetch_peer_html(session, peer)):
+            host = m.group(1).lower()
+            if host == old_host or host in tried or brand_label(host) != brand:
+                continue
+            tried.add(host)
+            candidate = f"https://{host}/"
+            res = direct_check(session, candidate, "chrome")
+            if res["status"] == 200:
+                p = urlparse(res["final_url"])
+                if brand_label(p.hostname or "") == brand:
+                    return f"{p.scheme}://{p.netloc}/"
+    return None
 
 
 def make_update(config: dict, *, status: int, checked: str, response_ms,
@@ -237,7 +350,7 @@ def make_update(config: dict, *, status: int, checked: str, response_ms,
     return new
 
 
-def process_site(session: cffi.Session, name: str, config: dict) -> dict | None:
+def process_site(session: cffi.Session, name: str, config: dict, peers: list[str] | None = None) -> dict | None:
     url = config.get("full_url", "")
     if not url:
         return None
@@ -287,6 +400,12 @@ def process_site(session: cffi.Session, name: str, config: dict) -> dict | None:
             target_url, url_changed, status = new_url, (new_url != url), 200
         else:
             print(f"  ❌ Bypass fallito: {bypass['error']}")
+            if status == -1 and peers:
+                print("  🔎 Dominio non raggiungibile, cerco nei siti collegati...")
+                new_url = find_from_peers(session, url, [p for p in peers if p != url])
+                if new_url and new_url != url:
+                    print(f"  ✅ Nuovo dominio (da peer): {new_url}")
+                    target_url, url_changed, status = new_url, True, 200
 
     ssl_exp = None if status == -1 else get_ssl_expiry(target_url)
 
@@ -323,7 +442,8 @@ def main():
     try:
         for name, config in all_domains.items():
             try:
-                updated = process_site(session, name, config)
+                peers = [c.get("full_url", "") for c in all_domains.values() if c.get("last_status") == 200]
+                updated = process_site(session, name, config, peers)
             except Exception as e:
                 print(f"  ❌ Errore su {name}: {e}")
                 updated = None
