@@ -42,9 +42,6 @@ def pick_impersonate() -> str:
 
 
 DOMAINS_FILE = os.environ.get("DOMAINS_FILE", "domains.json")
-# Versione ridotta letta dai client (VibraVid): solo nome sito -> full_url, la
-# stessa forma che restituiva GET /get del Worker, cosi' e' un sostituto diretto.
-# domains.json completo e' ~50 KB (history, response_ms, ssl_expiry), questo ~1 KB.
 SLIM_FILE = os.environ.get("DOMAINS_SLIM_FILE", "domains_s.json")
 
 
@@ -62,6 +59,83 @@ def now_str() -> str:
 
 def now_iso() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="milliseconds").replace("+00:00", "Z")
+
+
+def _load_json(path: str):
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        raise SystemExit(f"❌ File non trovato: {path}")
+    except json.JSONDecodeError as e:
+        raise SystemExit(f"❌ JSON non valido in {path}: {e}")
+
+
+def normalize_url(value) -> str | None:
+    if not isinstance(value, str) or not value.strip():
+        return None
+    url = value.strip()
+    if not url.startswith(("http://", "https://")):
+        url = "https://" + url
+    try:
+        parsed = urlparse(url)
+        port = parsed.port
+    except Exception:
+        return None
+    host = parsed.hostname
+    if parsed.scheme not in ("http", "https") or not host or any(ch.isspace() for ch in host):
+        return None
+    netloc = f"{host}:{port}" if port is not None else host
+    return f"{parsed.scheme}://{netloc}/"
+
+
+def load_source() -> dict:
+    if not os.path.exists(SLIM_FILE):
+        raise SystemExit(f"❌ File sorgente non trovato: {SLIM_FILE}")
+    slim_raw = _load_json(SLIM_FILE)
+    if not isinstance(slim_raw, dict) or not slim_raw:
+        raise SystemExit(f"❌ {SLIM_FILE} deve essere un oggetto JSON non vuoto")
+
+    full_raw = _load_json(DOMAINS_FILE) if os.path.exists(DOMAINS_FILE) else {}
+    if not isinstance(full_raw, dict):
+        raise SystemExit(f"❌ {DOMAINS_FILE} deve essere un oggetto JSON")
+
+    merged: dict = {}
+    for name, info in slim_raw.items():
+        if not isinstance(name, str) or not name.strip():
+            raise SystemExit(f"❌ Nome dominio non valido in {SLIM_FILE}: {name!r}")
+
+        if isinstance(info, str):
+            raw_url = info
+        elif isinstance(info, dict):
+            raw_url = info.get("full_url")
+        else:
+            raise SystemExit(f"❌ Entry non valida per {name!r} in {SLIM_FILE}")
+
+        url = normalize_url(raw_url)
+        if not url:
+            raise SystemExit(f"❌ full_url non valida per {name!r}: {raw_url!r}")
+
+        prev = full_raw.get(name)
+        if isinstance(prev, dict):
+            if normalize_url(prev.get("full_url")) == url:
+                merged[name] = {**prev, "full_url": url}
+            else:
+                # URL cambiato: conserva la history, ma lo stato va rimisurato.
+                merged[name] = {
+                    **prev,
+                    "full_url": url,
+                    "last_status": None,
+                    "time_change": now_str(),
+                }
+        else:
+            merged[name] = {
+                "full_url": url,
+                "last_status": None,
+                "time_change": now_str(),
+            }
+
+    return merged
 
 
 _dns_cache: dict[str, str | None] = {}
@@ -428,12 +502,7 @@ def process_site(session: cffi.Session, name: str, config: dict, peers: list[str
 
 
 def main():
-    if not os.path.exists(DOMAINS_FILE):
-        print(f"❌ File non trovato: {DOMAINS_FILE}", file=sys.stderr)
-        sys.exit(1)
-
-    with open(DOMAINS_FILE, encoding="utf-8") as f:
-        all_domains: dict = json.load(f)
+    all_domains = load_source()
 
     print(f"🔍 Avvio controllo di {len(all_domains)} domini (curl_cffi + Google DNS)\n")
 
