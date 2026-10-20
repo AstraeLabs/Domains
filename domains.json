@@ -260,10 +260,10 @@
     ]
   },
   "animeworld": {
-    "full_url": "https://www.animeworld.ac/",
-    "time_change": "2026-10-13 18:31:21",
+    "full_url": "https://static.animeworld.ac/",
+    "time_change": "2026-10-20 19:27:36",
     "last_status": 200,
-    "last_check": "2026-10-13T18:31:21.194Z",
+    "last_check": "2026-10-20T19:27:21.688Z",
     "response_ms": 787,
     "ssl_expiry": "2026-12-25",
     "history": [
