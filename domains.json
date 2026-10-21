@@ -1060,16 +1060,12 @@
   },
   "guardaplay": {
     "full_url": "https://guardaplay.cam/",
-    "time_change": "2026-10-19 23:46:23",
-    "last_status": 200,
-    "last_check": "2026-10-19T23:46:23.830Z",
-    "response_ms": 595,
+    "time_change": "2026-10-21 19:49:11",
+    "last_status": 403,
+    "last_check": "2026-10-21T19:49:08.685Z",
+    "response_ms": 97,
     "ssl_expiry": "2027-01-07",
     "history": [
-      {
-        "t": "2026-10-11T23:31:37.076Z",
-        "status": 403
-      },
       {
         "t": "2026-10-11T23:46:36.943Z",
         "status": 200
@@ -1265,15 +1261,19 @@
       {
         "t": "2026-10-19T23:46:23.830Z",
         "status": 200
+      },
+      {
+        "t": "2026-10-21T19:49:08.685Z",
+        "status": 403
       }
     ]
   },
   "guardoseries": {
     "full_url": "https://guardoseries.click/",
-    "time_change": "2026-10-21 00:47:41",
-    "last_status": 200,
-    "last_check": "2026-10-21T00:47:41.473Z",
-    "response_ms": 209,
+    "time_change": "2026-10-21 19:49:20",
+    "last_status": 403,
+    "last_check": "2026-10-21T19:49:18.034Z",
+    "response_ms": 329,
     "ssl_expiry": "2027-01-18",
     "history": [
       {
@@ -1343,21 +1343,21 @@
       {
         "t": "2026-10-19T20:46:32.590Z",
         "status": 200
+      },
+      {
+        "t": "2026-10-21T19:49:18.034Z",
+        "status": 403
       }
     ]
   },
   "eurostreaming": {
     "full_url": "https://eurostream.fun/",
-    "time_change": "2026-10-21 15:46:36",
-    "last_status": 200,
-    "last_check": "2026-10-21T15:46:36.258Z",
-    "response_ms": 855,
+    "time_change": "2026-10-21 19:49:31",
+    "last_status": 403,
+    "last_check": "2026-10-21T19:49:27.454Z",
+    "response_ms": 345,
     "ssl_expiry": "2027-01-18",
     "history": [
-      {
-        "t": "2026-09-02T07:46:31.316Z",
-        "status": 200
-      },
       {
         "t": "2026-09-02T11:31:56.145Z",
         "status": -1
@@ -1553,6 +1553,10 @@
       {
         "t": "2026-10-20T10:16:29.501Z",
         "status": 200
+      },
+      {
+        "t": "2026-10-21T19:49:27.454Z",
+        "status": 403
       }
     ]
   },
