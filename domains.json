@@ -1352,16 +1352,12 @@
   },
   "eurostreaming": {
     "full_url": "https://eurostream.fun/",
-    "time_change": "2026-10-21 19:49:31",
-    "last_status": 403,
-    "last_check": "2026-10-21T19:49:27.454Z",
-    "response_ms": 345,
+    "time_change": "2026-10-21 22:56:18",
+    "last_status": 200,
+    "last_check": "2026-10-21T22:56:18.921Z",
+    "response_ms": 763,
     "ssl_expiry": "2027-01-18",
     "history": [
-      {
-        "t": "2026-09-02T11:31:56.145Z",
-        "status": -1
-      },
       {
         "t": "2026-09-02T11:46:35.764Z",
         "status": 200
@@ -1557,6 +1553,10 @@
       {
         "t": "2026-10-21T19:49:27.454Z",
         "status": 403
+      },
+      {
+        "t": "2026-10-21T22:56:18.921Z",
+        "status": 200
       }
     ]
   },
