@@ -211,10 +211,10 @@
   },
   "animeunity": {
     "full_url": "https://www.animeunity.to/",
-    "time_change": "2026-10-19 18:50:29",
-    "last_status": 200,
-    "last_check": "2026-10-19T18:50:29.004Z",
-    "response_ms": 305,
+    "time_change": "2026-10-21 15:46:08",
+    "last_status": 403,
+    "last_check": "2026-10-21T15:46:05.031Z",
+    "response_ms": 121,
     "ssl_expiry": "2027-01-13",
     "history": [
       {
@@ -256,6 +256,10 @@
       {
         "t": "2026-10-19T18:50:29.004Z",
         "status": 200
+      },
+      {
+        "t": "2026-10-21T15:46:05.031Z",
+        "status": 403
       }
     ]
   },
@@ -1343,12 +1347,12 @@
     ]
   },
   "eurostreaming": {
-    "full_url": "https://eurostream.pics/",
-    "time_change": "2026-10-20 10:16:29",
+    "full_url": "https://eurostream.fun/",
+    "time_change": "2026-10-21 15:46:36",
     "last_status": 200,
-    "last_check": "2026-10-20T10:16:29.501Z",
-    "response_ms": 942,
-    "ssl_expiry": "2026-11-27",
+    "last_check": "2026-10-21T15:46:36.258Z",
+    "response_ms": 855,
+    "ssl_expiry": "2027-01-18",
     "history": [
       {
         "t": "2026-09-02T07:46:31.316Z",
