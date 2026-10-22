@@ -15,7 +15,7 @@ concurrency:
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
 
     steps:
       - name: Checkout repo
@@ -36,8 +36,9 @@ jobs:
         env:
           DOMAINS_FILE: domains.json
           PYTHONIOENCODING: utf-8
+          ZENROWS_API_KEY: ${{ secrets.ZENROWS_API_KEY }}
 
-      - name: Commit domains.json + domains_s.json if changed
+      - name: Commit domains.json + domains_s.json + zenrows_state.json if changed
         id: commit
         env:
           BRANCH: ${{ github.ref_name }}
@@ -47,6 +48,7 @@ jobs:
 
           for i in 1 2 3; do
             git add domains.json domains_s.json
+            [ -f zenrows_state.json ] && git add zenrows_state.json
             if git diff --cached --quiet; then
               echo "No changes detected"
               echo "pushed=false" >> "$GITHUB_OUTPUT"

@@ -10,6 +10,7 @@ import sys
 import time
 from datetime import datetime, timezone
 from urllib.parse import urlparse, quote
+from zoneinfo import ZoneInfo
 
 from curl_cffi import requests as cffi
 from curl_cffi import CurlOpt
@@ -43,6 +44,18 @@ def pick_impersonate() -> str:
 
 DOMAINS_FILE = os.environ.get("DOMAINS_FILE", "domains.json")
 SLIM_FILE = os.environ.get("DOMAINS_SLIM_FILE", "domains_s.json")
+ZENROWS_API          = "https://api.zenrows.com/v1/"
+ZENROWS_KEY          = os.environ.get("ZENROWS_API_KEY", "")
+ZENROWS_STATE_FILE   = os.environ.get("ZENROWS_STATE_FILE", "zenrows_state.json")
+ZENROWS_BUDGET       = int(os.environ.get("ZENROWS_MONTHLY_BUDGET", "4000"))
+ZENROWS_FORCE        = os.environ.get("ZENROWS_FORCE") == "1"
+ZENROWS_HOUR         = 0
+ZENROWS_TIMEOUT_S    = 120
+# (parametri, costo stimato in crediti): prima il livello base, poi premium.
+ZENROWS_TIERS = (
+    ({}, 1),
+    ({"premium_proxy": "true", "js_render": "true", "proxy_country": "it"}, 25),
+)
 
 
 INTERSTITIAL_MARKERS = ("disablevpn", "disable-vpn", "vpncheck", "vpn-check", "blockvpn")
@@ -404,6 +417,82 @@ def find_from_peers(session: cffi.Session, url: str, peers: list[str]) -> str | 
     return None
 
 
+_zr_state: dict = {}
+_zr_dirty = False
+
+
+def rome_now() -> datetime:
+    try:
+        return datetime.now(ZoneInfo("Europe/Rome"))
+    except Exception:
+        return datetime.now(timezone.utc)
+
+
+def load_zenrows_state() -> None:
+    global _zr_state
+    month = rome_now().strftime("%Y-%m")
+    try:
+        with open(ZENROWS_STATE_FILE, encoding="utf-8") as f:
+            state = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        state = {}
+    if not isinstance(state, dict) or state.get("month") != month:
+        state = {"month": month, "credits": 0, "last_run": {}}
+    state.setdefault("credits", 0)
+    state.setdefault("last_run", {})
+    _zr_state = state
+
+
+def save_zenrows_state() -> None:
+    if not _zr_dirty:
+        return
+    with open(ZENROWS_STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(_zr_state, f, indent=2, ensure_ascii=False)
+
+
+def zenrows_allowed(name: str) -> bool:
+    if not ZENROWS_KEY:
+        return False
+    now = rome_now()
+    if not ZENROWS_FORCE and now.hour != ZENROWS_HOUR:
+        return False
+    if not ZENROWS_FORCE and _zr_state["last_run"].get(name) == now.date().isoformat():
+        return False
+    return _zr_state["credits"] + ZENROWS_TIERS[0][1] <= ZENROWS_BUDGET
+
+
+def zenrows_check(session: cffi.Session, name: str, url: str) -> dict:
+    """Prova i livelli ZenRows in ordine di costo; ritorna il dominio finale se 200."""
+    global _zr_dirty
+    _zr_state["last_run"][name] = rome_now().date().isoformat()
+    _zr_dirty = True
+
+    error = "budget esaurito"
+    for params, cost in ZENROWS_TIERS:
+        if _zr_state["credits"] + cost > ZENROWS_BUDGET:
+            break
+        label = "premium" if params else "base"
+        try:
+            res = session.get(
+                ZENROWS_API,
+                params={"apikey": ZENROWS_KEY, "url": url, **params},
+                timeout=ZENROWS_TIMEOUT_S,
+            )
+        except Exception as e:
+            error = str(e)
+            continue
+        charged = int(res.headers.get("x-request-credits") or 0)
+        _zr_state["credits"] += charged
+        if res.status_code != 200:
+            error = f"{label}: status {res.status_code}"
+            continue
+        final = res.headers.get("zr-final-url") or url
+        p = urlparse(final)
+        print(f"  🔓 ZenRows {label} ok ({charged} crediti, mese: {_zr_state['credits']}/{ZENROWS_BUDGET})")
+        return {"success": True, "final_url": f"{p.scheme}://{p.netloc}/"}
+    return {"success": False, "error": error}
+
+
 def make_update(config: dict, *, status: int, checked: str, response_ms,
                 ssl_exp, full_url=None, status_changed: bool, url_changed: bool) -> dict:
     new = dict(config)
@@ -458,9 +547,15 @@ def process_site(session: cffi.Session, name: str, config: dict, peers: list[str
     elif status == 200:
         pass
     elif status in (403, 503, 429, -1):
-        print(f"  ⚠️  Blocco (status {status}), provo Google Translate...")
         bypass = {"success": False, "error": "n/a"}
-        for t_attempt in range(TRANSLATE_RETRY_LIMIT):
+        if zenrows_allowed(name):
+            print(f"  ⚠️  Blocco (status {status}), provo ZenRows...")
+            bypass = zenrows_check(session, name, url)
+            if not bypass["success"]:
+                print(f"  ❌ ZenRows fallito: {bypass['error']}")
+        if not bypass["success"]:
+            print(f"  ⚠️  Blocco (status {status}), provo Google Translate...")
+        for t_attempt in range(0 if bypass["success"] else TRANSLATE_RETRY_LIMIT):
             t_imp = pick_impersonate()
             bypass = google_translate_proxy(session, url, t_imp)
             if bypass["success"]:
@@ -470,7 +565,7 @@ def process_site(session: cffi.Session, name: str, config: dict, peers: list[str
                 time.sleep(RETRY_DELAY_S)
         if bypass["success"]:
             new_url = bypass["final_url"]
-            print(f"  ✅ Nuovo dominio: {new_url}")
+            print(f"  ✅ Nuovo dominio: {new_url}" if new_url != url else "  ✅ Dominio raggiungibile")
             target_url, url_changed, status = new_url, (new_url != url), 200
         else:
             print(f"  ❌ Bypass fallito: {bypass['error']}")
@@ -503,6 +598,7 @@ def process_site(session: cffi.Session, name: str, config: dict, peers: list[str
 
 def main():
     all_domains = load_source()
+    load_zenrows_state()
 
     print(f"🔍 Avvio controllo di {len(all_domains)} domini (curl_cffi + Google DNS)\n")
 
@@ -522,6 +618,7 @@ def main():
             time.sleep(DELAY_BETWEEN)
     finally:
         session.close()
+        save_zenrows_state()
 
     with open(DOMAINS_FILE, "w", encoding="utf-8") as f:
         json.dump(all_domains, f, indent=2, ensure_ascii=False)

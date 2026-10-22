@@ -6,7 +6,7 @@
     "full_url": "https://www.animeunity.to/"
   },
   "animeworld": {
-    "full_url": "https://static.animeworld.ac/"
+    "full_url": "https://www.animeworld.ac/"
   },
   "cb01new": {
     "full_url": "https://cb01one.com/"
@@ -16,9 +16,6 @@
   },
   "streamingcommunity": {
     "full_url": "https://streamingcommunityz.build/"
-  },
-  "streamingcommunity_2": {
-    "full_url": "https://streamingunity.fun/"
   },
   "guardaplay": {
     "full_url": "https://guardaplay.cam/"
@@ -35,16 +32,7 @@
   "hydrahd": {
     "full_url": "https://hydrahd.gd/"
   },
-  "cinezo": {
-    "full_url": "https://www.cinezo.org/"
-  },
-  "monochrome": {
-    "full_url": "https://monochrome.tf/"
-  },
   "Cineblog_1": {
     "full_url": "https://cineblog001.loan/"
-  },
-  "7movies": {
-    "full_url": "https://7movies.ac/"
   }
 }
