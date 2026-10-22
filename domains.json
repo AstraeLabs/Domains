@@ -1,10 +1,10 @@
 {
   "animeunity": {
     "full_url": "https://www.animeunity.co/",
-    "time_change": "2026-10-22 10:54:02",
-    "last_status": 403,
-    "last_check": "2026-10-22T10:53:59.655Z",
-    "response_ms": 53,
+    "time_change": "2026-10-22 22:45:08",
+    "last_status": 200,
+    "last_check": "2026-10-22T22:45:07.543Z",
+    "response_ms": 44,
     "ssl_expiry": "2027-01-17",
     "history": [
       {
@@ -58,6 +58,10 @@
       {
         "t": "2026-10-22T10:53:59.655Z",
         "status": 403
+      },
+      {
+        "t": "2026-10-22T22:45:07.543Z",
+        "status": 200
       }
     ]
   },
@@ -650,10 +654,10 @@
   },
   "guardoseries": {
     "full_url": "https://guardoseries.click/",
-    "time_change": "2026-10-22 10:54:17",
-    "last_status": 403,
-    "last_check": "2026-10-22T10:54:14.625Z",
-    "response_ms": 45,
+    "time_change": "2026-10-22 22:45:25",
+    "last_status": 200,
+    "last_check": "2026-10-22T22:45:20.071Z",
+    "response_ms": 31,
     "ssl_expiry": "2027-01-18",
     "history": [
       {
@@ -735,6 +739,10 @@
       {
         "t": "2026-10-22T10:54:14.625Z",
         "status": 403
+      },
+      {
+        "t": "2026-10-22T22:45:20.071Z",
+        "status": 200
       }
     ]
   },
