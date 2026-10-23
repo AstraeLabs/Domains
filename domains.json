@@ -1,10 +1,10 @@
 {
   "animeunity": {
     "full_url": "https://www.animeunity.co/",
-    "time_change": "2026-10-23 00:59:00",
-    "last_status": 403,
-    "last_check": "2026-10-23T00:58:58.203Z",
-    "response_ms": 18,
+    "time_change": "2026-10-23 22:30:33",
+    "last_status": 200,
+    "last_check": "2026-10-23T22:30:32.251Z",
+    "response_ms": 112,
     "ssl_expiry": "2027-01-17",
     "history": [
       {
@@ -66,6 +66,10 @@
       {
         "t": "2026-10-23T00:58:58.203Z",
         "status": 403
+      },
+      {
+        "t": "2026-10-23T22:30:32.251Z",
+        "status": 200
       }
     ]
   },
@@ -456,16 +460,12 @@
   },
   "streamingcommunity": {
     "full_url": "https://streamingcommunityz.build/",
-    "time_change": "2026-10-19 22:31:21",
-    "last_status": 200,
-    "last_check": "2026-10-19T22:31:21.002Z",
-    "response_ms": 819,
+    "time_change": "2026-10-23 22:30:38",
+    "last_status": 502,
+    "last_check": "2026-10-23T22:30:38.797Z",
+    "response_ms": 120,
     "ssl_expiry": "2027-01-17",
     "history": [
-      {
-        "t": "2026-06-29T20:46:37.885Z",
-        "status": 522
-      },
       {
         "t": "2026-06-29T21:01:17.100Z",
         "status": 200
@@ -661,16 +661,20 @@
       {
         "t": "2026-10-19T22:31:21.002Z",
         "status": 200
+      },
+      {
+        "t": "2026-10-23T22:30:38.797Z",
+        "status": 502
       }
     ]
   },
   "guardoseries": {
-    "full_url": "https://guardoseries.click/",
-    "time_change": "2026-10-23 00:59:16",
-    "last_status": 403,
-    "last_check": "2026-10-23T00:59:13.641Z",
-    "response_ms": 64,
-    "ssl_expiry": "2027-01-18",
+    "full_url": "https://guardoseries.rest/",
+    "time_change": "2026-10-23 22:31:17",
+    "last_status": 200,
+    "last_check": "2026-10-23T22:30:44.459Z",
+    "response_ms": 19,
+    "ssl_expiry": "2027-01-21",
     "history": [
       {
         "t": "2026-10-02T11:16:22.458Z",
@@ -759,6 +763,10 @@
       {
         "t": "2026-10-23T00:59:13.641Z",
         "status": 403
+      },
+      {
+        "t": "2026-10-23T22:30:44.459Z",
+        "status": 200
       }
     ]
   },
