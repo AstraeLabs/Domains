@@ -673,12 +673,12 @@
     ]
   },
   "guardoseries": {
-    "full_url": "https://guardoseries.rest/",
-    "time_change": "2026-10-24 01:04:07",
-    "last_status": 403,
-    "last_check": "2026-10-24T01:04:04.796Z",
-    "response_ms": 17,
-    "ssl_expiry": "2027-01-21",
+    "full_url": "https://guardoseries.quest/",
+    "time_change": "2026-10-28 21:54:12",
+    "last_status": 200,
+    "last_check": "2026-10-28T21:54:12.286Z",
+    "response_ms": 533,
+    "ssl_expiry": "2027-01-26",
     "history": [
       {
         "t": "2026-10-02T11:16:22.458Z",
@@ -775,6 +775,10 @@
       {
         "t": "2026-10-24T01:04:04.796Z",
         "status": 403
+      },
+      {
+        "t": "2026-10-28T21:54:12.286Z",
+        "status": 200
       }
     ]
   },
