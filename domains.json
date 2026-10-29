@@ -674,9 +674,9 @@
   },
   "guardoseries": {
     "full_url": "https://guardoseries.quest/",
-    "time_change": "2026-10-28 21:54:12",
-    "last_status": 200,
-    "last_check": "2026-10-28T21:54:12.286Z",
+    "time_change": "2026-10-29 18:17:24",
+    "last_status": -1,
+    "last_check": "2026-10-29T18:17:19.734Z",
     "response_ms": 533,
     "ssl_expiry": "2027-01-26",
     "history": [
@@ -779,6 +779,10 @@
       {
         "t": "2026-10-28T21:54:12.286Z",
         "status": 200
+      },
+      {
+        "t": "2026-10-29T18:17:19.734Z",
+        "status": -1
       }
     ]
   },
