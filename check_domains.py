@@ -49,7 +49,6 @@ ZENROWS_KEY          = os.environ.get("ZENROWS_API_KEY", "")
 ZENROWS_STATE_FILE   = os.environ.get("ZENROWS_STATE_FILE", "zenrows_state.json")
 ZENROWS_BUDGET       = int(os.environ.get("ZENROWS_MONTHLY_BUDGET", "4000"))
 ZENROWS_FORCE        = os.environ.get("ZENROWS_FORCE") == "1"
-ZENROWS_HOUR         = 0
 ZENROWS_TIMEOUT_S    = 120
 # (parametri, costo stimato in crediti): prima il livello base, poi premium.
 ZENROWS_TIERS = (
@@ -454,8 +453,6 @@ def zenrows_allowed(name: str) -> bool:
     if not ZENROWS_KEY:
         return False
     now = rome_now()
-    if not ZENROWS_FORCE and now.hour != ZENROWS_HOUR:
-        return False
     if not ZENROWS_FORCE and _zr_state["last_run"].get(name) == now.date().isoformat():
         return False
     return _zr_state["credits"] + ZENROWS_TIERS[0][1] <= ZENROWS_BUDGET

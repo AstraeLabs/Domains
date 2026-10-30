@@ -2,11 +2,11 @@ name: Update Domains
 
 on:
   schedule:
-    - cron: "*/15 6-23 * * *"
+    - cron: "0 6-23 * * *"
   workflow_dispatch:
     inputs:
       zenrows_force:
-        description: "Use ZenRows now (ignore midnight and daily limits)"
+        description: "Use ZenRows now (ignore daily limit)"
         type: boolean
         default: false
 
