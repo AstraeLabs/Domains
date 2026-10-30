@@ -1,10 +1,10 @@
 {
   "animeunity": {
     "full_url": "https://www.animeunity.co/",
-    "time_change": "2026-10-24 01:03:51",
-    "last_status": 403,
-    "last_check": "2026-10-24T01:03:49.313Z",
-    "response_ms": 20,
+    "time_change": "2026-10-30 09:06:59",
+    "last_status": 200,
+    "last_check": "2026-10-30T09:06:58.460Z",
+    "response_ms": 25,
     "ssl_expiry": "2027-01-17",
     "history": [
       {
@@ -74,6 +74,10 @@
       {
         "t": "2026-10-24T01:03:49.313Z",
         "status": 403
+      },
+      {
+        "t": "2026-10-30T09:06:58.460Z",
+        "status": 200
       }
     ]
   },
@@ -1202,6 +1206,20 @@
       },
       {
         "t": "2026-10-06T13:31:31.618Z",
+        "status": 200
+      }
+    ]
+  },
+  "loonex": {
+    "full_url": "https://loonex.eu/",
+    "last_status": 200,
+    "time_change": "2026-10-30 09:07:22",
+    "last_check": "2026-10-30T09:07:22.080Z",
+    "response_ms": 614,
+    "ssl_expiry": "2026-12-27",
+    "history": [
+      {
+        "t": "2026-10-30T09:07:22.080Z",
         "status": 200
       }
     ]
