@@ -284,12 +284,12 @@
     ]
   },
   "cb01new": {
-    "full_url": "https://cb01one.stream/",
+    "full_url": "https://cb01one.org/",
     "old_domain": "live",
-    "time_change": "2026-10-26 18:05:49",
+    "time_change": "2026-11-02 22:57:17",
     "last_status": 200,
-    "last_check": "2026-10-26T18:05:48.923Z",
-    "response_ms": 962,
+    "last_check": "2026-11-02T22:57:17.397Z",
+    "response_ms": 1016,
     "ssl_expiry": "2027-01-02",
     "history": [
       {
@@ -495,12 +495,12 @@
     ]
   },
   "streamingcommunity": {
-    "full_url": "https://streamingcommunityz.foo/",
-    "time_change": "2026-11-02 14:19:15",
+    "full_url": "https://streamingcommunityz.boo/",
+    "time_change": "2026-11-02 22:57:20",
     "last_status": 200,
-    "last_check": "2026-11-02T14:19:15.774Z",
-    "response_ms": 414,
-    "ssl_expiry": "2027-01-24",
+    "last_check": "2026-11-02T22:57:20.433Z",
+    "response_ms": 734,
+    "ssl_expiry": "2027-01-31",
     "history": [
       {
         "t": "2026-06-30T22:46:38.189Z",
