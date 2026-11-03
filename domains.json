@@ -827,12 +827,12 @@
     ]
   },
   "eurostreaming": {
-    "full_url": "https://eurostream.fit/",
-    "time_change": "2026-10-28 11:53:16",
+    "full_url": "https://eurostream.one/",
+    "time_change": "2026-11-03 20:22:26",
     "last_status": 200,
-    "last_check": "2026-10-28T11:53:16.732Z",
-    "response_ms": 777,
-    "ssl_expiry": "2027-01-18",
+    "last_check": "2026-11-03T20:22:26.409Z",
+    "response_ms": 1035,
+    "ssl_expiry": "2027-02-01",
     "history": [
       {
         "t": "2026-09-02T11:46:35.764Z",
