@@ -883,11 +883,11 @@
     ]
   },
   "eurostreaming": {
-    "full_url": "https://eurostream.one/",
-    "time_change": "2026-11-03 20:22:26",
+    "full_url": "https://eurostream.hair/",
+    "time_change": "2026-11-10 20:44:59",
     "last_status": 200,
-    "last_check": "2026-11-03T20:22:26.409Z",
-    "response_ms": 1035,
+    "last_check": "2026-11-10T20:44:59.780Z",
+    "response_ms": 1039,
     "ssl_expiry": "2027-02-01",
     "history": [
       {
