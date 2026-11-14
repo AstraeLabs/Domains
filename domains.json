@@ -1,10 +1,10 @@
 {
   "animeunity": {
     "full_url": "https://www.animeunity.co/",
-    "time_change": "2026-11-14 01:08:33",
-    "last_status": 200,
-    "last_check": "2026-11-14T01:08:31.909Z",
-    "response_ms": 47,
+    "time_change": "2026-11-14 12:45:04",
+    "last_status": 403,
+    "last_check": "2026-11-14T12:45:00.289Z",
+    "response_ms": 34,
     "ssl_expiry": "2027-01-17",
     "history": [
       {
@@ -198,6 +198,10 @@
       {
         "t": "2026-11-14T01:08:31.909Z",
         "status": 200
+      },
+      {
+        "t": "2026-11-14T12:45:00.289Z",
+        "status": 403
       }
     ]
   },
