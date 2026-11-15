@@ -1132,9 +1132,9 @@
     "full_url": "https://mapple.fun/",
     "time_change": "2026-10-06 13:31:31",
     "last_status": 200,
-    "last_check": "2026-10-06T13:31:31.618Z",
-    "response_ms": 282,
-    "ssl_expiry": "2026-12-16",
+    "last_check": "2026-11-15T19:30:36.022Z",
+    "response_ms": 268,
+    "ssl_expiry": "2027-02-13",
     "history": [
       {
         "t": "2026-09-17T19:18:56.909Z",
