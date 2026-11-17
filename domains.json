@@ -1,16 +1,12 @@
 {
   "animeunity": {
     "full_url": "https://animeunity.cx/",
-    "time_change": "2026-11-17 15:14:56",
-    "last_status": 403,
-    "last_check": "2026-11-17T15:14:49.527Z",
-    "response_ms": 55,
+    "time_change": "2026-11-17 23:15:22",
+    "last_status": 200,
+    "last_check": "2026-11-17T23:15:20.471Z",
+    "response_ms": 456,
     "ssl_expiry": "2027-01-27",
     "history": [
-      {
-        "t": "2026-10-19T16:31:16.291Z",
-        "status": 403
-      },
       {
         "t": "2026-10-19T16:46:17.447Z",
         "status": -1
@@ -206,6 +202,10 @@
       {
         "t": "2026-11-17T15:14:49.527Z",
         "status": 403
+      },
+      {
+        "t": "2026-11-17T23:15:20.471Z",
+        "status": 200
       }
     ]
   },
@@ -386,16 +386,12 @@
   "cb01new": {
     "full_url": "https://cb01one.watch/",
     "old_domain": "live",
-    "time_change": "2026-11-17 15:15:08",
-    "last_status": 403,
-    "last_check": "2026-11-17T15:15:04.153Z",
-    "response_ms": 60,
+    "time_change": "2026-11-17 23:15:34",
+    "last_status": 200,
+    "last_check": "2026-11-17T23:15:31.639Z",
+    "response_ms": 431,
     "ssl_expiry": "2027-01-02",
     "history": [
-      {
-        "t": "2026-09-27T08:15:32.093Z",
-        "status": 200
-      },
       {
         "t": "2026-09-27T08:45:23.421Z",
         "status": 403
@@ -591,6 +587,10 @@
       {
         "t": "2026-11-17T15:15:04.153Z",
         "status": 403
+      },
+      {
+        "t": "2026-11-17T23:15:31.639Z",
+        "status": 200
       }
     ]
   },
@@ -919,11 +919,11 @@
     ]
   },
   "eurostreaming": {
-    "full_url": "https://eurostream.hair/",
-    "time_change": "2026-11-10 20:44:59",
+    "full_url": "https://eurostream.skin/",
+    "time_change": "2026-11-17 23:15:52",
     "last_status": 200,
-    "last_check": "2026-11-10T20:44:59.780Z",
-    "response_ms": 1039,
+    "last_check": "2026-11-17T23:15:52.662Z",
+    "response_ms": 852,
     "ssl_expiry": "2027-02-01",
     "history": [
       {
