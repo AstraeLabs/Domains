@@ -384,18 +384,14 @@
     ]
   },
   "cb01new": {
-    "full_url": "https://cb01one.watch/",
+    "full_url": "https://cb01one.live/",
     "old_domain": "live",
-    "time_change": "2026-11-19 14:57:28",
-    "last_status": 403,
-    "last_check": "2026-11-19T14:57:25.759Z",
-    "response_ms": 40,
+    "time_change": "2026-11-19 22:33:58",
+    "last_status": 200,
+    "last_check": "2026-11-19T22:33:57.140Z",
+    "response_ms": 85,
     "ssl_expiry": "2027-01-02",
     "history": [
-      {
-        "t": "2026-09-27T11:30:28.948Z",
-        "status": 200
-      },
       {
         "t": "2026-09-27T11:45:24.515Z",
         "status": 403
@@ -591,6 +587,10 @@
       {
         "t": "2026-11-19T14:57:25.759Z",
         "status": 403
+      },
+      {
+        "t": "2026-11-19T22:33:57.140Z",
+        "status": 200
       }
     ]
   },
