@@ -1,16 +1,12 @@
 {
   "animeunity": {
     "full_url": "https://animeunity.cx/",
-    "time_change": "2026-11-19 14:57:17",
-    "last_status": 403,
-    "last_check": "2026-11-19T14:57:13.819Z",
-    "response_ms": 113,
+    "time_change": "2026-11-20 03:48:36",
+    "last_status": 200,
+    "last_check": "2026-11-20T03:48:34.968Z",
+    "response_ms": 41,
     "ssl_expiry": "2027-01-27",
     "history": [
-      {
-        "t": "2026-10-19T17:31:13.888Z",
-        "status": 403
-      },
       {
         "t": "2026-10-19T17:46:38.830Z",
         "status": -1
@@ -206,6 +202,10 @@
       {
         "t": "2026-11-19T14:57:13.819Z",
         "status": 403
+      },
+      {
+        "t": "2026-11-20T03:48:34.968Z",
+        "status": 200
       }
     ]
   },
