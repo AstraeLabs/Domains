@@ -1,16 +1,12 @@
 {
   "animeunity": {
     "full_url": "https://animeunity.cx/",
-    "time_change": "2026-11-22 00:48:47",
-    "last_status": 200,
-    "last_check": "2026-11-22T00:48:46.564Z",
-    "response_ms": 46,
+    "time_change": "2026-11-22 13:50:05",
+    "last_status": 403,
+    "last_check": "2026-11-22T13:50:01.558Z",
+    "response_ms": 31,
     "ssl_expiry": "2027-01-27",
     "history": [
-      {
-        "t": "2026-10-22T10:53:59.655Z",
-        "status": 403
-      },
       {
         "t": "2026-10-22T22:45:07.543Z",
         "status": 200
@@ -206,6 +202,10 @@
       {
         "t": "2026-11-22T00:48:46.564Z",
         "status": 200
+      },
+      {
+        "t": "2026-11-22T13:50:01.558Z",
+        "status": 403
       }
     ]
   },
@@ -386,16 +386,12 @@
   "cb01new": {
     "full_url": "https://cb01one.live/",
     "old_domain": "live",
-    "time_change": "2026-11-22 00:48:56",
-    "last_status": 200,
-    "last_check": "2026-11-22T00:48:56.150Z",
-    "response_ms": 31,
+    "time_change": "2026-11-22 13:50:16",
+    "last_status": 403,
+    "last_check": "2026-11-22T13:50:12.693Z",
+    "response_ms": 18,
     "ssl_expiry": "2027-01-02",
     "history": [
-      {
-        "t": "2026-09-27T15:45:29.687Z",
-        "status": 403
-      },
       {
         "t": "2026-09-27T15:49:23.036Z",
         "status": 200
@@ -591,6 +587,10 @@
       {
         "t": "2026-11-22T00:48:56.150Z",
         "status": 200
+      },
+      {
+        "t": "2026-11-22T13:50:12.693Z",
+        "status": 403
       }
     ]
   },
