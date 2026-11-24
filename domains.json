@@ -1,16 +1,12 @@
 {
   "animeunity": {
     "full_url": "https://animeunity.cx/",
-    "time_change": "2026-11-23 16:55:13",
-    "last_status": 403,
-    "last_check": "2026-11-23T16:55:09.663Z",
-    "response_ms": 32,
+    "time_change": "2026-11-24 03:06:58",
+    "last_status": 200,
+    "last_check": "2026-11-24T03:06:56.785Z",
+    "response_ms": 127,
     "ssl_expiry": "2027-01-27",
     "history": [
-      {
-        "t": "2026-10-23T22:30:32.251Z",
-        "status": 200
-      },
       {
         "t": "2026-10-24T01:03:49.313Z",
         "status": 403
@@ -206,6 +202,10 @@
       {
         "t": "2026-11-23T16:55:09.663Z",
         "status": 403
+      },
+      {
+        "t": "2026-11-24T03:06:56.785Z",
+        "status": 200
       }
     ]
   },
@@ -384,18 +384,14 @@
     ]
   },
   "cb01new": {
-    "full_url": "https://cb01one.live/",
+    "full_url": "https://cb01one.download/",
     "old_domain": "live",
-    "time_change": "2026-11-23 16:55:25",
-    "last_status": 403,
-    "last_check": "2026-11-23T16:55:21.297Z",
-    "response_ms": 26,
+    "time_change": "2026-11-24 03:07:08",
+    "last_status": 200,
+    "last_check": "2026-11-24T03:07:06.908Z",
+    "response_ms": 156,
     "ssl_expiry": "2027-01-02",
     "history": [
-      {
-        "t": "2026-09-27T16:45:29.077Z",
-        "status": 200
-      },
       {
         "t": "2026-09-27T17:00:41.453Z",
         "status": 403
@@ -591,16 +587,20 @@
       {
         "t": "2026-11-23T16:55:21.297Z",
         "status": 403
+      },
+      {
+        "t": "2026-11-24T03:07:06.908Z",
+        "status": 200
       }
     ]
   },
   "streamingcommunity": {
-    "full_url": "https://streamingcommunityz.dad/",
-    "time_change": "2026-11-16 23:36:09",
+    "full_url": "https://streamingcommunityz.mov/",
+    "time_change": "2026-11-24 03:07:11",
     "last_status": 200,
-    "last_check": "2026-11-16T23:36:09.836Z",
-    "response_ms": 471,
-    "ssl_expiry": "2027-02-07",
+    "last_check": "2026-11-24T03:07:11.298Z",
+    "response_ms": 586,
+    "ssl_expiry": "2027-02-11",
     "history": [
       {
         "t": "2026-06-30T22:46:38.189Z",
