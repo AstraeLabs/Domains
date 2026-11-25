@@ -1,16 +1,12 @@
 {
   "animeunity": {
     "full_url": "https://animeunity.cx/",
-    "time_change": "2026-11-24 16:45:08",
-    "last_status": 403,
-    "last_check": "2026-11-24T16:45:04.256Z",
-    "response_ms": 116,
+    "time_change": "2026-11-25 01:12:20",
+    "last_status": 200,
+    "last_check": "2026-11-25T01:12:20.169Z",
+    "response_ms": 34,
     "ssl_expiry": "2027-01-27",
     "history": [
-      {
-        "t": "2026-10-30T09:06:58.460Z",
-        "status": 200
-      },
       {
         "t": "2026-10-30T16:23:41.292Z",
         "status": 403
@@ -206,6 +202,10 @@
       {
         "t": "2026-11-24T16:45:04.256Z",
         "status": 403
+      },
+      {
+        "t": "2026-11-25T01:12:20.169Z",
+        "status": 200
       }
     ]
   },
@@ -213,9 +213,9 @@
     "full_url": "https://www.animeworld.ac/",
     "time_change": "2026-10-23 19:28:53",
     "last_status": 200,
-    "last_check": "2026-10-23T19:28:52.977Z",
-    "response_ms": 827,
-    "ssl_expiry": "2026-12-25",
+    "last_check": "2026-11-25T01:12:22.853Z",
+    "response_ms": 502,
+    "ssl_expiry": "2027-02-22",
     "history": [
       {
         "t": "2026-07-02T06:46:12.509Z",
@@ -386,16 +386,12 @@
   "cb01new": {
     "full_url": "https://cb01one.download/",
     "old_domain": "live",
-    "time_change": "2026-11-24 16:45:20",
-    "last_status": 403,
-    "last_check": "2026-11-24T16:45:16.819Z",
-    "response_ms": 130,
+    "time_change": "2026-11-25 01:12:32",
+    "last_status": 200,
+    "last_check": "2026-11-25T01:12:28.612Z",
+    "response_ms": 29,
     "ssl_expiry": "2027-01-02",
     "history": [
-      {
-        "t": "2026-09-27T17:15:32.422Z",
-        "status": 200
-      },
       {
         "t": "2026-09-27T18:00:32.997Z",
         "status": 403
@@ -591,6 +587,10 @@
       {
         "t": "2026-11-24T16:45:16.819Z",
         "status": 403
+      },
+      {
+        "t": "2026-11-25T01:12:28.612Z",
+        "status": 200
       }
     ]
   },
