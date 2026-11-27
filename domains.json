@@ -1,16 +1,12 @@
 {
   "animeunity": {
     "full_url": "https://animeunity.cx/",
-    "time_change": "2026-11-26 16:04:23",
-    "last_status": 403,
-    "last_check": "2026-11-26T16:04:19.974Z",
-    "response_ms": 66,
+    "time_change": "2026-11-27 00:54:22",
+    "last_status": 200,
+    "last_check": "2026-11-27T00:54:21.172Z",
+    "response_ms": 45,
     "ssl_expiry": "2027-01-27",
     "history": [
-      {
-        "t": "2026-10-31T23:52:16.961Z",
-        "status": 200
-      },
       {
         "t": "2026-11-01T12:23:22.083Z",
         "status": 403
@@ -206,6 +202,10 @@
       {
         "t": "2026-11-26T16:04:19.974Z",
         "status": 403
+      },
+      {
+        "t": "2026-11-27T00:54:21.172Z",
+        "status": 200
       }
     ]
   },
@@ -386,16 +386,12 @@
   "cb01new": {
     "full_url": "https://cb01one.xyz/",
     "old_domain": "live",
-    "time_change": "2026-11-26 16:04:35",
-    "last_status": 403,
-    "last_check": "2026-11-26T16:04:31.633Z",
-    "response_ms": 57,
+    "time_change": "2026-11-27 00:54:31",
+    "last_status": 200,
+    "last_check": "2026-11-27T00:54:29.948Z",
+    "response_ms": 43,
     "ssl_expiry": "2027-01-02",
     "history": [
-      {
-        "t": "2026-09-27T18:15:26.245Z",
-        "status": 200
-      },
       {
         "t": "2026-09-27T18:30:24.826Z",
         "status": 403
@@ -591,6 +587,10 @@
       {
         "t": "2026-11-26T16:04:31.633Z",
         "status": 403
+      },
+      {
+        "t": "2026-11-27T00:54:29.948Z",
+        "status": 200
       }
     ]
   },
@@ -1342,9 +1342,9 @@
     "full_url": "https://loonex.eu/",
     "last_status": 200,
     "time_change": "2026-10-30 09:07:22",
-    "last_check": "2026-10-30T09:07:22.080Z",
-    "response_ms": 614,
-    "ssl_expiry": "2026-12-27",
+    "last_check": "2026-11-27T00:54:52.676Z",
+    "response_ms": 703,
+    "ssl_expiry": "2027-02-24",
     "history": [
       {
         "t": "2026-10-30T09:07:22.080Z",
